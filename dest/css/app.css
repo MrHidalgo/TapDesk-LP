@@ -2035,6 +2035,7 @@ picture {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 180px;
   }
 }
 
@@ -2047,7 +2048,14 @@ picture {
   }
 }
 
-/* line 48, src/scss/_components/homepage/_ai.scss */
+@media screen and (max-width: 767px) {
+  /* line 37, src/scss/_components/homepage/_ai.scss */
+  .ai__bg-right {
+    padding-top: 0;
+  }
+}
+
+/* line 52, src/scss/_components/homepage/_ai.scss */
 .ai__bg-right img {
   position: relative;
   top: -30px;
@@ -2056,21 +2064,21 @@ picture {
   height: auto;
 }
 
-/* line 58, src/scss/_components/homepage/_ai.scss */
+/* line 62, src/scss/_components/homepage/_ai.scss */
 .ai__wrapper {
   padding-top: 99px;
   padding-bottom: 118px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 58, src/scss/_components/homepage/_ai.scss */
+  /* line 62, src/scss/_components/homepage/_ai.scss */
   .ai__wrapper {
     padding-top: 49px;
     padding-bottom: 30px;
   }
 }
 
-/* line 67, src/scss/_components/homepage/_ai.scss */
+/* line 71, src/scss/_components/homepage/_ai.scss */
 .ai__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2078,66 +2086,66 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 67, src/scss/_components/homepage/_ai.scss */
+  /* line 71, src/scss/_components/homepage/_ai.scss */
   .ai__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 73, src/scss/_components/homepage/_ai.scss */
+/* line 77, src/scss/_components/homepage/_ai.scss */
 .ai__row-left, .ai__row-right {
   width: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 73, src/scss/_components/homepage/_ai.scss */
+  /* line 77, src/scss/_components/homepage/_ai.scss */
   .ai__row-left, .ai__row-right {
     width: 100%;
   }
 }
 
-/* line 81, src/scss/_components/homepage/_ai.scss */
+/* line 85, src/scss/_components/homepage/_ai.scss */
 .ai__row-left {
   padding-right: 70px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 81, src/scss/_components/homepage/_ai.scss */
+  /* line 85, src/scss/_components/homepage/_ai.scss */
   .ai__row-left {
     padding-right: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 88, src/scss/_components/homepage/_ai.scss */
+  /* line 92, src/scss/_components/homepage/_ai.scss */
   .ai__row-right {
     display: none;
   }
 }
 
-/* line 97, src/scss/_components/homepage/_ai.scss */
+/* line 101, src/scss/_components/homepage/_ai.scss */
 .ai__col-2 {
   z-index: 1;
   position: relative;
 }
 
-/* line 103, src/scss/_components/homepage/_ai.scss */
+/* line 107, src/scss/_components/homepage/_ai.scss */
 .ai__text {
   text-align: left;
 }
 
-/* line 106, src/scss/_components/homepage/_ai.scss */
+/* line 110, src/scss/_components/homepage/_ai.scss */
 .ai__text--pb {
   padding-bottom: 29px;
 }
 
-/* line 109, src/scss/_components/homepage/_ai.scss */
+/* line 113, src/scss/_components/homepage/_ai.scss */
 .ai__text--pb:last-of-type {
   padding-bottom: 38px;
 }
 
-/* line 115, src/scss/_components/homepage/_ai.scss */
+/* line 119, src/scss/_components/homepage/_ai.scss */
 .ai__btn {
   max-width: 232px;
 }
