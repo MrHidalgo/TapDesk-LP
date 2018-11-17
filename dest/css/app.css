@@ -283,6 +283,12 @@
 }
 
 /* line 81, src/scss/_generated/_spriteSVG.scss */
+.icon-robot {
+  width: 44px;
+  height: 42px;
+}
+
+/* line 85, src/scss/_generated/_spriteSVG.scss */
 .icon-signup {
   width: 16px;
   height: 20px;
@@ -922,7 +928,12 @@ picture {
   padding-bottom: 30px;
 }
 
-/* line 37, src/scss/_macros/_title.scss */
+/* line 36, src/scss/_macros/_title.scss */
+.c-title--mind {
+  padding-bottom: 30px;
+}
+
+/* line 40, src/scss/_macros/_title.scss */
 .c-title__text {
   text-align: center;
   line-height: 1.2;
@@ -933,30 +944,30 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 37, src/scss/_macros/_title.scss */
+  /* line 40, src/scss/_macros/_title.scss */
   .c-title__text {
     font-size: calc(25px + 15 * (100vw - 320px) / 1280);
   }
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 37, src/scss/_macros/_title.scss */
+  /* line 40, src/scss/_macros/_title.scss */
   .c-title__text {
     font-size: 40px;
   }
 }
 
-/* line 49, src/scss/_macros/_title.scss */
+/* line 52, src/scss/_macros/_title.scss */
 .c-title__icon-wrap {
   padding-bottom: 18px;
 }
 
-/* line 52, src/scss/_macros/_title.scss */
+/* line 55, src/scss/_macros/_title.scss */
 .c-title__icon-wrap svg {
   fill: #cd084b;
 }
 
-/* line 56, src/scss/_macros/_title.scss */
+/* line 59, src/scss/_macros/_title.scss */
 .c-title__icon-wrap .icon-request {
   fill: rgba(255, 255, 255, 0.4);
 }
@@ -1050,19 +1061,27 @@ picture {
   margin-right: auto;
 }
 
-/* line 39, src/scss/_macros/_btn.scss */
+/* line 38, src/scss/_macros/_btn.scss */
+.c-btn--mind {
+  max-width: 232px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 46, src/scss/_macros/_btn.scss */
 .c-btn--border:hover {
   background-color: #cd084b;
   color: #fff;
 }
 
-/* line 45, src/scss/_macros/_btn.scss */
+/* line 52, src/scss/_macros/_btn.scss */
 .c-btn--bg {
   background-color: #cd084b;
   color: #fff;
 }
 
-/* line 49, src/scss/_macros/_btn.scss */
+/* line 56, src/scss/_macros/_btn.scss */
 .c-btn--bg:hover {
   background-color: transparent;
 }
@@ -3690,6 +3709,101 @@ picture {
   color: #000;
   font-size: 20px;
   font-weight: bold;
+}
+
+/* line 3, src/scss/_components/features/_mind.scss */
+.mind {
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/features/_mind.scss */
+  .mind {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 12, src/scss/_components/features/_mind.scss */
+.mind__box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 191px;
+  padding: 35px 45px;
+  border-radius: 13px;
+  background-color: #f2f5fa;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 12, src/scss/_components/features/_mind.scss */
+  .mind__box {
+    padding-top: calc(25px + 10 * (100vw - 320px) / 1120);
+    padding-bottom: calc(25px + 10 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 12, src/scss/_components/features/_mind.scss */
+  .mind__box {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 12, src/scss/_components/features/_mind.scss */
+  .mind__box {
+    padding-left: calc(30px + 15 * (100vw - 320px) / 1120);
+    padding-right: calc(30px + 15 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 12, src/scss/_components/features/_mind.scss */
+  .mind__box {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+/* line 23, src/scss/_components/features/_mind.scss */
+.mind__box-wrapper {
+  position: relative;
+  max-width: 824px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 31, src/scss/_components/features/_mind.scss */
+.mind__box--outer {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  background-color: rgba(242, 245, 250, 0.5);
+}
+
+/* line 42, src/scss/_components/features/_mind.scss */
+.mind__box p {
+  line-height: 1.8;
+  text-align: center;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
