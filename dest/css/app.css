@@ -887,37 +887,42 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 15, src/scss/_macros/_title.scss */
+/* line 14, src/scss/_macros/_title.scss */
 .c-title--request h1 {
   color: #fff;
 }
 
-/* line 19, src/scss/_macros/_title.scss */
+/* line 18, src/scss/_macros/_title.scss */
 .c-title--cloud {
   padding-bottom: 20px;
 }
 
-/* line 22, src/scss/_macros/_title.scss */
+/* line 21, src/scss/_macros/_title.scss */
 .c-title--analytics {
   padding-bottom: 27px;
 }
 
-/* line 25, src/scss/_macros/_title.scss */
+/* line 24, src/scss/_macros/_title.scss */
 .c-title--pipelines {
   padding-bottom: 28px;
 }
 
-/* line 28, src/scss/_macros/_title.scss */
+/* line 27, src/scss/_macros/_title.scss */
 .c-title--leads {
   padding-bottom: 18px;
 }
 
-/* line 31, src/scss/_macros/_title.scss */
+/* line 30, src/scss/_macros/_title.scss */
 .c-title--ai {
   padding-bottom: 34px;
 }
 
-/* line 35, src/scss/_macros/_title.scss */
+/* line 33, src/scss/_macros/_title.scss */
+.c-title--apps {
+  padding-bottom: 30px;
+}
+
+/* line 37, src/scss/_macros/_title.scss */
 .c-title__text {
   text-align: center;
   line-height: 1.2;
@@ -928,32 +933,71 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 35, src/scss/_macros/_title.scss */
+  /* line 37, src/scss/_macros/_title.scss */
   .c-title__text {
     font-size: calc(25px + 15 * (100vw - 320px) / 1280);
   }
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 35, src/scss/_macros/_title.scss */
+  /* line 37, src/scss/_macros/_title.scss */
   .c-title__text {
     font-size: 40px;
   }
 }
 
-/* line 47, src/scss/_macros/_title.scss */
+/* line 49, src/scss/_macros/_title.scss */
 .c-title__icon-wrap {
   padding-bottom: 18px;
 }
 
-/* line 50, src/scss/_macros/_title.scss */
+/* line 52, src/scss/_macros/_title.scss */
 .c-title__icon-wrap svg {
   fill: #cd084b;
 }
 
-/* line 54, src/scss/_macros/_title.scss */
+/* line 56, src/scss/_macros/_title.scss */
 .c-title__icon-wrap .icon-request {
   fill: rgba(255, 255, 255, 0.4);
+}
+
+/* line 3, src/scss/_macros/_subtitle.scss */
+.c-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 8, src/scss/_macros/_subtitle.scss */
+.c-subtitle__text {
+  padding-bottom: 20px;
+  color: #CD084B;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 2.25px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 8, src/scss/_macros/_subtitle.scss */
+  .c-subtitle__text {
+    font-size: calc(12px + 6 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 8, src/scss/_macros/_subtitle.scss */
+  .c-subtitle__text {
+    font-size: 18px;
+  }
 }
 
 /* line 3, src/scss/_macros/_btn.scss */
@@ -999,19 +1043,26 @@ picture {
   margin-right: auto;
 }
 
-/* line 33, src/scss/_macros/_btn.scss */
+/* line 32, src/scss/_macros/_btn.scss */
+.c-btn--apps {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 39, src/scss/_macros/_btn.scss */
 .c-btn--border:hover {
   background-color: #cd084b;
   color: #fff;
 }
 
-/* line 39, src/scss/_macros/_btn.scss */
+/* line 45, src/scss/_macros/_btn.scss */
 .c-btn--bg {
   background-color: #cd084b;
   color: #fff;
 }
 
-/* line 43, src/scss/_macros/_btn.scss */
+/* line 49, src/scss/_macros/_btn.scss */
 .c-btn--bg:hover {
   background-color: transparent;
 }
@@ -3437,6 +3488,208 @@ picture {
 /* line 50, src/scss/_components/features/_fully.scss */
 .fully__btn:hover {
   color: #cd084b;
+}
+
+/* line 3, src/scss/_components/features/_finding.scss */
+.finding {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/features/_finding.scss */
+  .finding {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 10, src/scss/_components/features/_finding.scss */
+.finding__wrapper {
+  padding-top: 100px;
+  padding-bottom: 65px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 10, src/scss/_components/features/_finding.scss */
+  .finding__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 3, src/scss/_components/features/_manage.scss */
+.manage {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/features/_manage.scss */
+  .manage {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 10, src/scss/_components/features/_manage.scss */
+.manage__wrapper {
+  padding-top: 100px;
+  padding-bottom: 65px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 10, src/scss/_components/features/_manage.scss */
+  .manage__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 3, src/scss/_components/features/_save.scss */
+.save {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/features/_save.scss */
+  .save {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 10, src/scss/_components/features/_save.scss */
+.save__wrapper {
+  padding-top: 100px;
+  padding-bottom: 65px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 10, src/scss/_components/features/_save.scss */
+  .save__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 3, src/scss/_components/features/_control.scss */
+.control {
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/features/_control.scss */
+  .control {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 9, src/scss/_components/features/_control.scss */
+.control__wrapper {
+  padding-top: 100px;
+  padding-bottom: 65px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 9, src/scss/_components/features/_control.scss */
+  .control__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 3, src/scss/_components/features/_apps.scss */
+.apps {
+  padding-bottom: 100px;
+  background-color: #F8FAFC;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/features/_apps.scss */
+  .apps {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 10, src/scss/_components/features/_apps.scss */
+.apps__wrapper {
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 10, src/scss/_components/features/_apps.scss */
+  .apps__wrapper {
+    padding-top: 50px;
+  }
+}
+
+/* line 17, src/scss/_components/features/_apps.scss */
+.apps__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 17, src/scss/_components/features/_apps.scss */
+  .apps__block {
+    width: 50%;
+  }
+}
+
+/* line 27, src/scss/_components/features/_apps.scss */
+.apps__block-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 58px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 27, src/scss/_components/features/_apps.scss */
+  .apps__block-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 30px;
+  }
+}
+
+/* line 38, src/scss/_components/features/_apps.scss */
+.apps__block-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 170px;
+}
+
+/* line 46, src/scss/_components/features/_apps.scss */
+.apps__block-text {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
