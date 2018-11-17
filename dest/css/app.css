@@ -72,18 +72,28 @@
           transition-timing-function: ease;
 }
 
-/* line 56, src/scss/_vendor/hamburger/_base.scss */
+/* line 55, src/scss/_vendor/hamburger/_base.scss */
+.header--blue .hamburger-inner, .header--blue .hamburger-inner::before, .header--blue .hamburger-inner::after {
+  background-color: #00449D;
+}
+
+/* line 59, src/scss/_vendor/hamburger/_base.scss */
+.header--fixed .hamburger-inner, .header--fixed .hamburger-inner::before, .header--fixed .hamburger-inner::after {
+  background-color: #fff;
+}
+
+/* line 64, src/scss/_vendor/hamburger/_base.scss */
 .hamburger-inner::before, .hamburger-inner::after {
   content: "";
   display: block;
 }
 
-/* line 62, src/scss/_vendor/hamburger/_base.scss */
+/* line 70, src/scss/_vendor/hamburger/_base.scss */
 .hamburger-inner::before {
   top: -8px;
 }
 
-/* line 66, src/scss/_vendor/hamburger/_base.scss */
+/* line 74, src/scss/_vendor/hamburger/_base.scss */
 .hamburger-inner::after {
   bottom: -8px;
 }
@@ -651,12 +661,32 @@ picture {
   transition: fill 0.3s ease-in-out;
 }
 
-/* line 21, src/scss/_macros/_logotype.scss */
+/* line 19, src/scss/_macros/_logotype.scss */
+.header--blue .logo__link:hover svg {
+  fill: #cd084b;
+}
+
+/* line 23, src/scss/_macros/_logotype.scss */
+.header--fixed .logo__link:hover svg {
+  fill: #cd084b;
+}
+
+/* line 29, src/scss/_macros/_logotype.scss */
 .logo__link svg {
   fill: #fff;
   -webkit-transition: fill 0.3s ease-in-out;
   -o-transition: fill 0.3s ease-in-out;
   transition: fill 0.3s ease-in-out;
+}
+
+/* line 33, src/scss/_macros/_logotype.scss */
+.header--blue .logo__link svg {
+  fill: #00449D;
+}
+
+/* line 37, src/scss/_macros/_logotype.scss */
+.header--fixed .logo__link svg {
+  fill: #fff;
 }
 
 /* line 4, src/scss/_macros/_nav.scss */
@@ -724,19 +754,29 @@ picture {
   }
 }
 
-/* line 39, src/scss/_macros/_nav.scss */
+/* line 37, src/scss/_macros/_nav.scss */
+.header--blue .nav--header .nav__link {
+  color: #00449D;
+}
+
+/* line 41, src/scss/_macros/_nav.scss */
+.header--fixed .nav--header .nav__link {
+  color: #fff;
+}
+
+/* line 47, src/scss/_macros/_nav.scss */
 .nav--footer .nav__list {
   padding-bottom: 55px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 39, src/scss/_macros/_nav.scss */
+  /* line 47, src/scss/_macros/_nav.scss */
   .nav--footer .nav__list {
     padding-bottom: 27px;
   }
 }
 
-/* line 46, src/scss/_macros/_nav.scss */
+/* line 54, src/scss/_macros/_nav.scss */
 .nav--footer .nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,7 +790,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 46, src/scss/_macros/_nav.scss */
+  /* line 54, src/scss/_macros/_nav.scss */
   .nav--footer .nav__link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -758,19 +798,19 @@ picture {
   }
 }
 
-/* line 56, src/scss/_macros/_nav.scss */
+/* line 64, src/scss/_macros/_nav.scss */
 .nav--footer .nav__link:hover {
   color: #fff;
 }
 
-/* line 62, src/scss/_macros/_nav.scss */
+/* line 70, src/scss/_macros/_nav.scss */
 .nav__link {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 65, src/scss/_macros/_nav.scss */
+/* line 73, src/scss/_macros/_nav.scss */
 .nav__link:hover {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
@@ -1389,21 +1429,26 @@ picture {
     max-width: 100%;
     height: calc(100vh - 55px);
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.975);
+    background-color: rgba(255, 255, 255, 0.985);
   }
   /* line 101, src/scss/_components/_header.scss */
   .header__wrapper-right.is-open {
     display: block;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-    -webkit-animation-duration: 0.65s;
-            animation-duration: 0.65s;
+    -webkit-animation-duration: 0.45s;
+            animation-duration: 0.45s;
     -webkit-animation-name: c-zoomIn;
             animation-name: c-zoomIn;
   }
+  /* line 107, src/scss/_components/_header.scss */
+  .header__wrapper-right.is-open .nav__link,
+  .header__wrapper-right.is-open .header__link {
+    color: #00449D;
+  }
 }
 
-/* line 109, src/scss/_components/_header.scss */
+/* line 114, src/scss/_components/_header.scss */
 .header__wrapper-right > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1414,7 +1459,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 109, src/scss/_components/_header.scss */
+  /* line 114, src/scss/_components/_header.scss */
   .header__wrapper-right > div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1423,27 +1468,27 @@ picture {
   }
 }
 
-/* line 116, src/scss/_components/_header.scss */
+/* line 121, src/scss/_components/_header.scss */
 .header__wrapper-right > div:first-of-type {
   width: 100%;
   max-width: calc(100% - 211px);
 }
 
 @media screen and (max-width: 991px) {
-  /* line 116, src/scss/_components/_header.scss */
+  /* line 121, src/scss/_components/_header.scss */
   .header__wrapper-right > div:first-of-type {
     max-width: calc(100% - 170px);
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 116, src/scss/_components/_header.scss */
+  /* line 121, src/scss/_components/_header.scss */
   .header__wrapper-right > div:first-of-type {
     max-width: 100%;
   }
 }
 
-/* line 127, src/scss/_components/_header.scss */
+/* line 132, src/scss/_components/_header.scss */
 .header__wrapper-right > div:last-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1458,20 +1503,20 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 127, src/scss/_components/_header.scss */
+  /* line 132, src/scss/_components/_header.scss */
   .header__wrapper-right > div:last-of-type {
     width: 170px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 127, src/scss/_components/_header.scss */
+  /* line 132, src/scss/_components/_header.scss */
   .header__wrapper-right > div:last-of-type {
     width: 100%;
   }
 }
 
-/* line 143, src/scss/_components/_header.scss */
+/* line 148, src/scss/_components/_header.scss */
 .header__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1479,13 +1524,12 @@ picture {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
   font-weight: bold;
   font-family: 'Muli', sans-serif;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 143, src/scss/_components/_header.scss */
+  /* line 148, src/scss/_components/_header.scss */
   .header__link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1497,7 +1541,17 @@ picture {
   }
 }
 
-/* line 158, src/scss/_components/_header.scss */
+/* line 162, src/scss/_components/_header.scss */
+.header--blue .header__link {
+  color: #00449D;
+}
+
+/* line 166, src/scss/_components/_header.scss */
+.header--fixed .header__link {
+  color: #fff;
+}
+
+/* line 171, src/scss/_components/_header.scss */
 .header__link:hover svg {
   fill: white;
   -webkit-transition: fill 0.3s ease-in-out;
@@ -1505,12 +1559,22 @@ picture {
   transition: fill 0.3s ease-in-out;
 }
 
-/* line 165, src/scss/_components/_header.scss */
+/* line 175, src/scss/_components/_header.scss */
+.header--blue .header__link:hover svg {
+  fill: #00449d;
+}
+
+/* line 179, src/scss/_components/_header.scss */
+.header--fixed .header__link:hover svg {
+  fill: white;
+}
+
+/* line 185, src/scss/_components/_header.scss */
 .header__link-1 {
   border-bottom: none;
 }
 
-/* line 169, src/scss/_components/_header.scss */
+/* line 189, src/scss/_components/_header.scss */
 .header__link svg {
   fill: rgba(255, 255, 255, 0.4);
   margin-right: 12px;
@@ -1520,10 +1584,20 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 169, src/scss/_components/_header.scss */
+  /* line 189, src/scss/_components/_header.scss */
   .header__link svg {
     display: none;
   }
+}
+
+/* line 197, src/scss/_components/_header.scss */
+.header--blue .header__link svg {
+  fill: rgba(0, 68, 157, 0.4);
+}
+
+/* line 201, src/scss/_components/_header.scss */
+.header--fixed .header__link svg {
+  fill: rgba(255, 255, 255, 0.4);
 }
 
 @-webkit-keyframes c-zoomIn {
@@ -1548,7 +1622,7 @@ picture {
   }
 }
 
-/* line 191, src/scss/_components/_header.scss */
+/* line 219, src/scss/_components/_header.scss */
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
@@ -3241,6 +3315,84 @@ picture {
     padding-top: 51px;
     padding-bottom: 50px;
   }
+}
+
+/* line 3, src/scss/_components/features/_fully.scss */
+.fully {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 7, src/scss/_components/features/_fully.scss */
+.fully__bg {
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw + 300px);
+  margin-left: -150px;
+  height: calc(100% - 0px);
+  border-top-left-radius: 50% 0;
+  border-top-right-radius: 50% 0;
+  border-bottom-right-radius: 50% 100px;
+  border-bottom-left-radius: 50% 100px;
+}
+
+/* line 21, src/scss/_components/features/_fully.scss */
+.fully__bg-inner {
+  width: 100%;
+  height: 100%;
+  background: #F8FAFC;
+  background: -webkit-gradient(linear, left top, right top, from(#F8FAFC), to(#F8FAFC));
+  background: -webkit-linear-gradient(left, #F8FAFC, #F8FAFC);
+  background: -o-linear-gradient(left, #F8FAFC, #F8FAFC);
+  background: linear-gradient(to right, #F8FAFC, #F8FAFC);
+}
+
+/* line 28, src/scss/_components/features/_fully.scss */
+.fully__wrapper {
+  z-index: 1;
+  position: relative;
+  min-height: 519px;
+  padding-top: 177px;
+}
+
+/* line 35, src/scss/_components/features/_fully.scss */
+.fully__title {
+  padding-bottom: 40px;
+  color: #000;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 35, src/scss/_components/features/_fully.scss */
+  .fully__title {
+    font-size: calc(30px + 20 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 35, src/scss/_components/features/_fully.scss */
+  .fully__title {
+    font-size: 50px;
+  }
+}
+
+/* line 44, src/scss/_components/features/_fully.scss */
+.fully__btn {
+  max-width: 253px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+
+/* line 50, src/scss/_components/features/_fully.scss */
+.fully__btn:hover {
+  color: #cd084b;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

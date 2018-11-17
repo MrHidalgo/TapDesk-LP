@@ -124,14 +124,6 @@ $(window).on("scroll", function (ev) {
  */
 $(document).ready(function (ev) {
   /**
-   *
-   * @type {*|jQuery|HTMLElement}
-   * @private
-   */
-  var _document = $(document),
-      _window = $(window);
-
-  /**
    * =============================================
    * CALLBACK
    * =============================================
@@ -199,55 +191,57 @@ $(document).ready(function (ev) {
   var initVideo = function initVideo() {
     var vid = document.getElementById("video");
 
-    /**
-     *
-     */
-    vid.ontimeupdate = function () {
-      var percentage = vid.currentTime / vid.duration * 100;
-      $("[progress-video-js] span").css("width", percentage + "%");
+    if (vid) {
+      /**
+       *
+       */
+      vid.ontimeupdate = function () {
+        var percentage = vid.currentTime / vid.duration * 100;
+        $("[progress-video-js] span").css("width", percentage + "%");
 
-      if (percentage === 100) {
-        $("[progress-video-js] span").css("width", "0");
-        $('[play-video-js]').fadeIn(300);
-      }
-    };
+        if (percentage === 100) {
+          $("[progress-video-js] span").css("width", "0");
+          $('[play-video-js]').fadeIn(300);
+        }
+      };
 
-    /**
-     *
-     */
-    $("[progress-video-js]").on("click", function (ev) {
-      var offset = $(ev.currentTarget).offset(),
-          left = ev.pageX - offset.left,
-          totalWidth = $("[progress-video-js]").width(),
-          percentage = left / totalWidth,
-          vidTime = vid.duration * percentage;
+      /**
+       *
+       */
+      $("[progress-video-js]").on("click", function (ev) {
+        var offset = $(ev.currentTarget).offset(),
+            left = ev.pageX - offset.left,
+            totalWidth = $("[progress-video-js]").width(),
+            percentage = left / totalWidth,
+            vidTime = vid.duration * percentage;
 
-      vid.currentTime = vidTime;
-    });
+        vid.currentTime = vidTime;
+      });
 
-    /**
-     *
-     */
-    $('[play-video-js]').on('click', function (ev) {
-      var elem = $(ev.currentTarget);
+      /**
+       *
+       */
+      $('[play-video-js]').on('click', function (ev) {
+        var elem = $(ev.currentTarget);
 
-      if (!vid.paused) {
-        vid.pause();
-      } else {
-        vid.play();
-        elem.fadeOut(300);
-      }
-    });
+        if (!vid.paused) {
+          vid.pause();
+        } else {
+          vid.play();
+          elem.fadeOut(300);
+        }
+      });
 
-    /**
-     *
-     */
-    $(vid).on('click', function () {
-      if (!vid.paused) {
-        vid.pause();
-        $('[play-video-js]').fadeIn(300);
-      }
-    });
+      /**
+       *
+       */
+      $(vid).on('click', function () {
+        if (!vid.paused) {
+          vid.pause();
+          $('[play-video-js]').fadeIn(300);
+        }
+      });
+    }
   };
 
   /**
