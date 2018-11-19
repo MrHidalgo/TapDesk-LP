@@ -3824,14 +3824,14 @@ picture {
 /* line 14, src/scss/_components/features/_control.scss */
 .control__wrapper {
   padding-top: 100px;
-  padding-bottom: 65px;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
   /* line 14, src/scss/_components/features/_control.scss */
   .control__wrapper {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 }
 
