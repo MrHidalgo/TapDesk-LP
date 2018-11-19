@@ -90,6 +90,46 @@ var initSwiper = function initSwiper() {
    * @returns {{wrapperClass: string, slideClass: string, direction: string, loop: boolean, watchOverflow: boolean, normalizeSlideIndex: boolean, grabCursor: boolean, freeMode: boolean, effect: string, fadeEffect: {crossFade: boolean}, touchMoveStopPropagation: boolean, simulateTouch: boolean, allowSwipeToNext: boolean, allowSwipeToPrev: boolean, allowPageScroll: string, slidesPerView: number, spaceBetween: number, pagination: {el: string, clickable: boolean}, navigation: {nextEl: string, prevEl: string}, on: {init: on.init}}}
    */
   var swiperOption = function swiperOption() {
+    var paginationPosition = function paginationPosition(slider) {
+      var textContainer = slider.find('.slider__text-wrapper'),
+          paginationContainer = slider.find('.slider__pagination');
+
+      var maxHeight = 0;
+
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = $(textContainer)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var el = _step.value;
+
+          if ($(el).outerHeight(true) > maxHeight) {
+            maxHeight = $(el).outerHeight(true);
+          }
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+
+      if ($(window).width() > 767) {
+        $(paginationContainer).css({
+          'top': maxHeight
+        });
+      }
+    };
+
     return {
       wrapperClass: "swiper-wrapper",
       slideClass: "swiper-slide",
@@ -129,42 +169,14 @@ var initSwiper = function initSwiper() {
       },
       on: {
         init: function init() {
-          var slider = this.$el,
-              textContainer = slider.find('.slider__text-wrapper'),
-              paginationContainer = slider.find('.slider__pagination');
+          var slider = this.$el;
 
-          var maxHeight = 0;
+          paginationPosition(slider);
+        },
+        resize: function resize() {
+          var slider = this.$el;
 
-          var _iteratorNormalCompletion = true;
-          var _didIteratorError = false;
-          var _iteratorError = undefined;
-
-          try {
-            for (var _iterator = $(textContainer)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-              var el = _step.value;
-
-              if ($(el).outerHeight(true) > maxHeight) {
-                maxHeight = $(el).outerHeight(true);
-              }
-            }
-          } catch (err) {
-            _didIteratorError = true;
-            _iteratorError = err;
-          } finally {
-            try {
-              if (!_iteratorNormalCompletion && _iterator.return) {
-                _iterator.return();
-              }
-            } finally {
-              if (_didIteratorError) {
-                throw _iteratorError;
-              }
-            }
-          }
-
-          $(paginationContainer).css({
-            'top': maxHeight
-          });
+          paginationPosition(slider);
         }
       }
     };
