@@ -987,6 +987,16 @@ picture {
   font-size: 14px;
 }
 
+/* line 1, src/scss/_shared/_viewPortChecker.scss */
+.viewport-hide-js {
+  opacity: 0;
+}
+
+/* line 4, src/scss/_shared/_viewPortChecker.scss */
+.viewport-show-js {
+  opacity: 1;
+}
+
 /* line 2, src/scss/_shared/_swiper.scss */
 .swiper-container {
   width: 100%;
