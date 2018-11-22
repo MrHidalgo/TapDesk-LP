@@ -175,8 +175,11 @@ var initSwiper = function initSwiper() {
 
       if ($(window).width() > 767) {
         $(paginationContainer).css({
+          'bottom': 'auto',
           'top': maxHeight
         });
+      } else {
+        $(paginationContainer).removeAttr('style');
       }
     };
 
