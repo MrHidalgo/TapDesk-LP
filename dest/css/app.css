@@ -4503,7 +4503,97 @@ picture {
   }
 }
 
-/* line 6, src/scss/_components/support/_help.scss */
+/* line 7, src/scss/_components/support/_help.scss */
+.help--block h2 {
+  text-align: center;
+}
+
+/* line 16, src/scss/_components/support/_help.scss */
+.help h2 {
+  padding-bottom: 40px;
+  color: #000;
+  line-height: 1.2;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 16, src/scss/_components/support/_help.scss */
+  .help h2 {
+    font-size: calc(25px + 15 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 16, src/scss/_components/support/_help.scss */
+  .help h2 {
+    font-size: 40px;
+  }
+}
+
+/* line 24, src/scss/_components/support/_help.scss */
+.help h3 {
+  padding-bottom: 30px;
+  color: #000;
+  line-height: 1.2;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 24, src/scss/_components/support/_help.scss */
+  .help h3 {
+    font-size: calc(20px + 6 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 24, src/scss/_components/support/_help.scss */
+  .help h3 {
+    font-size: 26px;
+  }
+}
+
+/* line 32, src/scss/_components/support/_help.scss */
+.help__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  color: #00449D;
+}
+
+/* line 38, src/scss/_components/support/_help.scss */
+.help__back svg {
+  width: 16px;
+  height: 16px;
+  fill: #00449D;
+}
+
+/* line 44, src/scss/_components/support/_help.scss */
+.help__back span {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 44, src/scss/_components/support/_help.scss */
+  .help__back span {
+    font-size: calc(16px + 3 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 44, src/scss/_components/support/_help.scss */
+  .help__back span {
+    font-size: 19px;
+  }
+}
+
+/* line 50, src/scss/_components/support/_help.scss */
 .help__block {
   width: 100%;
   max-width: calc((100% - 120px) / 4);
@@ -4520,27 +4610,27 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 6, src/scss/_components/support/_help.scss */
+  /* line 50, src/scss/_components/support/_help.scss */
   .help__block {
     max-width: calc((100% - 90px) / 3);
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 6, src/scss/_components/support/_help.scss */
+  /* line 50, src/scss/_components/support/_help.scss */
   .help__block {
     max-width: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 6, src/scss/_components/support/_help.scss */
+  /* line 50, src/scss/_components/support/_help.scss */
   .help__block {
     max-width: calc(100% - 30px);
   }
 }
 
-/* line 26, src/scss/_components/support/_help.scss */
+/* line 70, src/scss/_components/support/_help.scss */
 .help__block:hover {
   background: #CD084B;
   -webkit-transition: background 0.3s ease-in-out;
@@ -4548,7 +4638,7 @@ picture {
   transition: background 0.3s ease-in-out;
 }
 
-/* line 31, src/scss/_components/support/_help.scss */
+/* line 75, src/scss/_components/support/_help.scss */
 .help__block:hover .help__block-img svg {
   fill: #fff;
   -webkit-transition: fill 0.3s ease-in-out;
@@ -4556,7 +4646,7 @@ picture {
   transition: fill 0.3s ease-in-out;
 }
 
-/* line 37, src/scss/_components/support/_help.scss */
+/* line 81, src/scss/_components/support/_help.scss */
 .help__block:hover .help__block-name {
   color: #fff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -4564,7 +4654,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 43, src/scss/_components/support/_help.scss */
+/* line 87, src/scss/_components/support/_help.scss */
 .help__block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4578,44 +4668,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 43, src/scss/_components/support/_help.scss */
+  /* line 87, src/scss/_components/support/_help.scss */
   .help__block-wrapper {
     padding-bottom: calc(75px + 99 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 43, src/scss/_components/support/_help.scss */
+  /* line 87, src/scss/_components/support/_help.scss */
   .help__block-wrapper {
     padding-bottom: 174px;
   }
 }
 
-/* line 50, src/scss/_components/support/_help.scss */
-.help__block-title {
-  padding-bottom: 45px;
-  color: #000;
-  text-align: center;
-  line-height: 1.2;
-  font-weight: 200;
-  font-size: 25px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 50, src/scss/_components/support/_help.scss */
-  .help__block-title {
-    font-size: calc(25px + 15 * (100vw - 320px) / 1120);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  /* line 50, src/scss/_components/support/_help.scss */
-  .help__block-title {
-    font-size: 40px;
-  }
-}
-
-/* line 59, src/scss/_components/support/_help.scss */
+/* line 94, src/scss/_components/support/_help.scss */
 .help__block-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4629,7 +4695,7 @@ picture {
   min-height: 60px;
 }
 
-/* line 65, src/scss/_components/support/_help.scss */
+/* line 100, src/scss/_components/support/_help.scss */
 .help__block-img svg {
   fill: #00449D;
   -webkit-transition: fill 0.3s ease-in-out;
@@ -4637,7 +4703,7 @@ picture {
   transition: fill 0.3s ease-in-out;
 }
 
-/* line 71, src/scss/_components/support/_help.scss */
+/* line 106, src/scss/_components/support/_help.scss */
 .help__block-name {
   padding-top: 22px;
   color: #000;
@@ -4649,101 +4715,39 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 71, src/scss/_components/support/_help.scss */
+  /* line 106, src/scss/_components/support/_help.scss */
   .help__block-name {
     font-size: calc(16px + 3 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 71, src/scss/_components/support/_help.scss */
+  /* line 106, src/scss/_components/support/_help.scss */
   .help__block-name {
     font-size: 19px;
   }
 }
 
-/* line 80, src/scss/_components/support/_help.scss */
+/* line 115, src/scss/_components/support/_help.scss */
 .help__topic {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 80, src/scss/_components/support/_help.scss */
+  /* line 115, src/scss/_components/support/_help.scss */
   .help__topic {
-    padding-bottom: calc(50px + 337 * (100vw - 320px) / 1600);
+    padding-bottom: calc(100px + 287 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 80, src/scss/_components/support/_help.scss */
+  /* line 115, src/scss/_components/support/_help.scss */
   .help__topic {
     padding-bottom: 387px;
   }
 }
 
-/* line 83, src/scss/_components/support/_help.scss */
-.help__topic-back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 20px;
-  color: #00449D;
-}
-
-/* line 89, src/scss/_components/support/_help.scss */
-.help__topic-back svg {
-  width: 16px;
-  height: 16px;
-  fill: #00449D;
-}
-
-/* line 95, src/scss/_components/support/_help.scss */
-.help__topic-back span {
-  padding-left: 20px;
-  font-size: 16px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 95, src/scss/_components/support/_help.scss */
-  .help__topic-back span {
-    font-size: calc(16px + 3 * (100vw - 320px) / 1120);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  /* line 95, src/scss/_components/support/_help.scss */
-  .help__topic-back span {
-    font-size: 19px;
-  }
-}
-
-/* line 101, src/scss/_components/support/_help.scss */
-.help__topic-title {
-  padding-bottom: 40px;
-  color: #000;
-  line-height: 1.2;
-  font-weight: 200;
-  font-size: 25px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 101, src/scss/_components/support/_help.scss */
-  .help__topic-title {
-    font-size: calc(25px + 15 * (100vw - 320px) / 1120);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  /* line 101, src/scss/_components/support/_help.scss */
-  .help__topic-title {
-    font-size: 40px;
-  }
-}
-
-/* line 109, src/scss/_components/support/_help.scss */
+/* line 118, src/scss/_components/support/_help.scss */
 .help__topic-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4754,7 +4758,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 113, src/scss/_components/support/_help.scss */
+/* line 122, src/scss/_components/support/_help.scss */
 .help__topic-link a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4766,36 +4770,68 @@ picture {
   border-bottom: 1px solid #D8D8D8;
   color: #00449D;
   font-size: 16px;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 113, src/scss/_components/support/_help.scss */
+  /* line 122, src/scss/_components/support/_help.scss */
   .help__topic-link a {
     font-size: calc(16px + 3 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 113, src/scss/_components/support/_help.scss */
+  /* line 122, src/scss/_components/support/_help.scss */
   .help__topic-link a {
     font-size: 19px;
   }
 }
 
-/* line 121, src/scss/_components/support/_help.scss */
+/* line 131, src/scss/_components/support/_help.scss */
+.help__topic-link a:hover {
+  border-color: #00449D;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 135, src/scss/_components/support/_help.scss */
+.help__topic-link a:hover i {
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 135, src/scss/_components/support/_help.scss */
+  .help__topic-link a:hover i {
+    -webkit-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+/* line 144, src/scss/_components/support/_help.scss */
 .help__topic-link a span {
   padding-right: 20px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 121, src/scss/_components/support/_help.scss */
+  /* line 144, src/scss/_components/support/_help.scss */
   .help__topic-link a span {
     width: 100%;
     max-width: calc(100% - 12px);
   }
 }
 
-/* line 129, src/scss/_components/support/_help.scss */
+/* line 152, src/scss/_components/support/_help.scss */
 .help__topic-link a i {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4807,15 +4843,111 @@ picture {
       -ms-flex-pack: center;
           justify-content: center;
   width: 12px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 136, src/scss/_components/support/_help.scss */
+/* line 160, src/scss/_components/support/_help.scss */
 .help__topic-link a svg {
   width: 12px;
   fill: #00449D;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+/* line 169, src/scss/_components/support/_help.scss */
+.help__inside {
+  padding-bottom: 75px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 169, src/scss/_components/support/_help.scss */
+  .help__inside {
+    padding-bottom: calc(75px + 99 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 169, src/scss/_components/support/_help.scss */
+  .help__inside {
+    padding-bottom: 174px;
+  }
+}
+
+/* line 172, src/scss/_components/support/_help.scss */
+.help__inside p,
+.help__inside h5,
+.help__inside ul li {
+  color: #575757;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 172, src/scss/_components/support/_help.scss */
+  .help__inside p,
+  .help__inside h5,
+  .help__inside ul li {
+    font-size: calc(15px + 2 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 172, src/scss/_components/support/_help.scss */
+  .help__inside p,
+  .help__inside h5,
+  .help__inside ul li {
+    font-size: 17px;
+  }
+}
+
+/* line 180, src/scss/_components/support/_help.scss */
+.help__inside p {
+  padding-bottom: 30px;
+}
+
+/* line 183, src/scss/_components/support/_help.scss */
+.help__inside p:last-of-type {
+  padding-bottom: 60px;
+}
+
+/* line 188, src/scss/_components/support/_help.scss */
+.help__inside h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 66px;
+  padding: 15px 30px;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  background-color: #F2F5FA;
+}
+
+/* line 198, src/scss/_components/support/_help.scss */
+.help__inside ul {
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+/* line 202, src/scss/_components/support/_help.scss */
+.help__inside ul li {
+  padding-bottom: 15px;
+  list-style-type: lower-alpha;
+}
+
+/* line 208, src/scss/_components/support/_help.scss */
+.help__inside img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
