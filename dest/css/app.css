@@ -1509,21 +1509,29 @@ picture {
           flex-direction: column;
 }
 
-/* line 9, src/scss/_macros/_form.scss */
+/* line 7, src/scss/_macros/_form.scss */
+.c-form--assistance {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 16, src/scss/_macros/_form.scss */
 .c-form__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 12, src/scss/_macros/_form.scss */
+/* line 19, src/scss/_macros/_form.scss */
 .c-form__row--request {
   padding-left: 20px;
   padding-right: 20px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 12, src/scss/_macros/_form.scss */
+  /* line 19, src/scss/_macros/_form.scss */
   .c-form__row--request {
     padding-left: 0;
     padding-right: 0;
@@ -1531,64 +1539,64 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 12, src/scss/_macros/_form.scss */
+  /* line 19, src/scss/_macros/_form.scss */
   .c-form__row--request {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 23, src/scss/_macros/_form.scss */
+/* line 30, src/scss/_macros/_form.scss */
 .c-form__row--request .c-form__row-left {
   padding-right: 20px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 23, src/scss/_macros/_form.scss */
+  /* line 30, src/scss/_macros/_form.scss */
   .c-form__row--request .c-form__row-left {
     padding-right: 10px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 23, src/scss/_macros/_form.scss */
+  /* line 30, src/scss/_macros/_form.scss */
   .c-form__row--request .c-form__row-left {
     padding-right: 0;
   }
 }
 
-/* line 32, src/scss/_macros/_form.scss */
+/* line 39, src/scss/_macros/_form.scss */
 .c-form__row--request .c-form__row-right {
   padding-left: 20px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 32, src/scss/_macros/_form.scss */
+  /* line 39, src/scss/_macros/_form.scss */
   .c-form__row--request .c-form__row-right {
     padding-left: 10px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 32, src/scss/_macros/_form.scss */
+  /* line 39, src/scss/_macros/_form.scss */
   .c-form__row--request .c-form__row-right {
     padding-left: 0;
   }
 }
 
-/* line 43, src/scss/_macros/_form.scss */
+/* line 50, src/scss/_macros/_form.scss */
 .c-form__row-left, .c-form__row-right {
   width: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 43, src/scss/_macros/_form.scss */
+  /* line 50, src/scss/_macros/_form.scss */
   .c-form__row-left, .c-form__row-right {
     width: 100%;
   }
 }
 
-/* line 52, src/scss/_macros/_form.scss */
+/* line 59, src/scss/_macros/_form.scss */
 .c-form__group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1602,50 +1610,50 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 57, src/scss/_macros/_form.scss */
+  /* line 64, src/scss/_macros/_form.scss */
   .c-form__group--request {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 62, src/scss/_macros/_form.scss */
+/* line 69, src/scss/_macros/_form.scss */
 .c-form__group--request .c-form__group-col {
   width: 50%;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 62, src/scss/_macros/_form.scss */
+  /* line 69, src/scss/_macros/_form.scss */
   .c-form__group--request .c-form__group-col {
     width: 100%;
   }
 }
 
-/* line 68, src/scss/_macros/_form.scss */
+/* line 75, src/scss/_macros/_form.scss */
 .c-form__group--request .c-form__group-col-0 {
   padding-right: 10px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 68, src/scss/_macros/_form.scss */
+  /* line 75, src/scss/_macros/_form.scss */
   .c-form__group--request .c-form__group-col-0 {
     padding-right: 0;
   }
 }
 
-/* line 75, src/scss/_macros/_form.scss */
+/* line 82, src/scss/_macros/_form.scss */
 .c-form__group--request .c-form__group-col-1 {
   padding-left: 10px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 75, src/scss/_macros/_form.scss */
+  /* line 82, src/scss/_macros/_form.scss */
   .c-form__group--request .c-form__group-col-1 {
     padding-left: 0;
   }
 }
 
-/* line 90, src/scss/_macros/_form.scss */
+/* line 97, src/scss/_macros/_form.scss */
 .c-form__field {
   position: relative;
   display: -webkit-box;
@@ -1658,13 +1666,13 @@ picture {
   margin-bottom: 30px;
 }
 
-/* line 101, src/scss/_macros/_form.scss */
+/* line 108, src/scss/_macros/_form.scss */
 .c-form__field--btn {
   width: 100%;
   padding-top: 30px;
 }
 
-/* line 107, src/scss/_macros/_form.scss */
+/* line 114, src/scss/_macros/_form.scss */
 .c-form__label {
   cursor: pointer;
   display: -webkit-box;
@@ -1679,7 +1687,7 @@ picture {
   font-size: 14px;
 }
 
-/* line 119, src/scss/_macros/_form.scss */
+/* line 126, src/scss/_macros/_form.scss */
 .c-form__input-wrapper, .c-form__textarea-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1687,7 +1695,7 @@ picture {
   display: flex;
 }
 
-/* line 125, src/scss/_macros/_form.scss */
+/* line 132, src/scss/_macros/_form.scss */
 .c-form__input, .c-form__textarea {
   outline: none;
   position: absolute;
@@ -1697,7 +1705,7 @@ picture {
   height: 100%;
 }
 
-/* line 135, src/scss/_macros/_form.scss */
+/* line 142, src/scss/_macros/_form.scss */
 .c-form__input {
   padding: 0 20px;
   border: none;
@@ -1708,12 +1716,17 @@ picture {
   font-size: 18px;
 }
 
-/* line 143, src/scss/_macros/_form.scss */
+/* line 150, src/scss/_macros/_form.scss */
+.c-form--assistance .c-form__input {
+  border: 2px solid rgba(0, 68, 157, 0.1);
+}
+
+/* line 154, src/scss/_macros/_form.scss */
 .c-form__input-wrapper {
   min-height: 60px;
 }
 
-/* line 148, src/scss/_macros/_form.scss */
+/* line 159, src/scss/_macros/_form.scss */
 .c-form__select {
   position: relative;
   height: 100%;
@@ -1722,7 +1735,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 155, src/scss/_macros/_form.scss */
+/* line 166, src/scss/_macros/_form.scss */
 .c-form__select select {
   opacity: 0;
   cursor: pointer;
@@ -1738,7 +1751,7 @@ picture {
           box-shadow: none;
 }
 
-/* line 169, src/scss/_macros/_form.scss */
+/* line 180, src/scss/_macros/_form.scss */
 .c-form__select-value {
   white-space: nowrap;
   overflow: hidden;
@@ -1756,7 +1769,7 @@ picture {
   font-size: 18px;
 }
 
-/* line 185, src/scss/_macros/_form.scss */
+/* line 196, src/scss/_macros/_form.scss */
 .c-form__select-icon {
   position: absolute;
   display: -webkit-box;
@@ -1774,17 +1787,17 @@ picture {
   height: 100%;
 }
 
-/* line 195, src/scss/_macros/_form.scss */
+/* line 206, src/scss/_macros/_form.scss */
 .c-form__select-icon svg {
   width: 12px;
 }
 
-/* line 209, src/scss/_macros/_form.scss */
+/* line 220, src/scss/_macros/_form.scss */
 .c-form__notify {
   display: none;
 }
 
-/* line 213, src/scss/_macros/_form.scss */
+/* line 224, src/scss/_macros/_form.scss */
 .c-form__btn {
   max-width: 256px;
   margin-left: auto;
@@ -4261,6 +4274,136 @@ picture {
 .mind__box p {
   line-height: 1.8;
   text-align: center;
+}
+
+/* line 3, src/scss/_components/support/_assistance.scss */
+.assistance {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 7, src/scss/_components/support/_assistance.scss */
+.assistance__bg {
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw + 300px);
+  margin-left: -150px;
+  height: calc(100% - 0px);
+  border-top-left-radius: 50% 0;
+  border-top-right-radius: 50% 0;
+  border-bottom-right-radius: 50% 100px;
+  border-bottom-left-radius: 50% 100px;
+}
+
+/* line 21, src/scss/_components/support/_assistance.scss */
+.assistance__bg-inner {
+  width: 100%;
+  height: 100%;
+  background: #F8FAFC;
+  background: -webkit-gradient(linear, left top, right top, from(#F8FAFC), to(#F8FAFC));
+  background: -webkit-linear-gradient(left, #F8FAFC, #F8FAFC);
+  background: -o-linear-gradient(left, #F8FAFC, #F8FAFC);
+  background: linear-gradient(to right, #F8FAFC, #F8FAFC);
+}
+
+/* line 28, src/scss/_components/support/_assistance.scss */
+.assistance__wrapper {
+  z-index: 1;
+  position: relative;
+  min-height: 519px;
+  padding-top: 177px;
+}
+
+/* line 35, src/scss/_components/support/_assistance.scss */
+.assistance__title {
+  padding-bottom: 40px;
+  color: #000;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 35, src/scss/_components/support/_assistance.scss */
+  .assistance__title {
+    font-size: calc(30px + 20 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 35, src/scss/_components/support/_assistance.scss */
+  .assistance__title {
+    font-size: 50px;
+  }
+}
+
+/* line 44, src/scss/_components/support/_assistance.scss */
+.assistance__subtitle {
+  padding-bottom: 10px;
+  color: rgba(0, 68, 157, 0.4);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2.25px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 44, src/scss/_components/support/_assistance.scss */
+  .assistance__subtitle {
+    font-size: calc(14px + 4 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 44, src/scss/_components/support/_assistance.scss */
+  .assistance__subtitle {
+    font-size: 18px;
+  }
+}
+
+/* line 54, src/scss/_components/support/_assistance.scss */
+.assistance__info {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 54, src/scss/_components/support/_assistance.scss */
+  .assistance__info {
+    padding-bottom: calc(50px + 62 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 54, src/scss/_components/support/_assistance.scss */
+  .assistance__info {
+    padding-bottom: 112px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 54, src/scss/_components/support/_assistance.scss */
+  .assistance__info {
+    font-size: calc(16px + 3 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 54, src/scss/_components/support/_assistance.scss */
+  .assistance__info {
+    font-size: 19px;
+  }
+}
+
+/* line 59, src/scss/_components/support/_assistance.scss */
+.assistance__info a {
+  color: #00449D;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
