@@ -181,186 +181,192 @@
 }
 
 /* line 13, src/scss/_generated/_spriteSVG.scss */
+.icon-arrow {
+  width: 512px;
+  height: 512px;
+}
+
+/* line 17, src/scss/_generated/_spriteSVG.scss */
 .icon-batman {
   width: 36px;
   height: 39px;
 }
 
-/* line 17, src/scss/_generated/_spriteSVG.scss */
+/* line 21, src/scss/_generated/_spriteSVG.scss */
 .icon-check {
   width: 45.701px;
   height: 45.7px;
 }
 
-/* line 21, src/scss/_generated/_spriteSVG.scss */
+/* line 25, src/scss/_generated/_spriteSVG.scss */
 .icon-cloud {
   width: 44px;
   height: 42px;
 }
 
-/* line 25, src/scss/_generated/_spriteSVG.scss */
+/* line 29, src/scss/_generated/_spriteSVG.scss */
 .icon-features {
   width: 40px;
   height: 37px;
 }
 
-/* line 29, src/scss/_generated/_spriteSVG.scss */
+/* line 33, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-0 {
   width: 40px;
   height: 40px;
 }
 
-/* line 33, src/scss/_generated/_spriteSVG.scss */
+/* line 37, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-1 {
   width: 40px;
   height: 40px;
 }
 
-/* line 37, src/scss/_generated/_spriteSVG.scss */
+/* line 41, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-2 {
   width: 40px;
   height: 42px;
 }
 
-/* line 41, src/scss/_generated/_spriteSVG.scss */
+/* line 45, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-3 {
   width: 44px;
   height: 46px;
 }
 
-/* line 45, src/scss/_generated/_spriteSVG.scss */
+/* line 49, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-4 {
   width: 40px;
   height: 40px;
 }
 
-/* line 49, src/scss/_generated/_spriteSVG.scss */
+/* line 53, src/scss/_generated/_spriteSVG.scss */
 .icon-flag {
   width: 24px;
   height: 28px;
 }
 
-/* line 53, src/scss/_generated/_spriteSVG.scss */
+/* line 57, src/scss/_generated/_spriteSVG.scss */
 .icon-help-accounts {
   width: 48px;
   height: 60px;
 }
 
-/* line 57, src/scss/_generated/_spriteSVG.scss */
+/* line 61, src/scss/_generated/_spriteSVG.scss */
 .icon-help-admin-tools {
   width: 56px;
   height: 56px;
 }
 
-/* line 61, src/scss/_generated/_spriteSVG.scss */
+/* line 65, src/scss/_generated/_spriteSVG.scss */
 .icon-help-analytics {
   width: 60px;
   height: 60px;
 }
 
-/* line 65, src/scss/_generated/_spriteSVG.scss */
+/* line 69, src/scss/_generated/_spriteSVG.scss */
 .icon-help-apps-settings {
   width: 72px;
   height: 60px;
 }
 
-/* line 69, src/scss/_generated/_spriteSVG.scss */
+/* line 73, src/scss/_generated/_spriteSVG.scss */
 .icon-help-calendar {
   width: 60px;
   height: 62px;
 }
 
-/* line 73, src/scss/_generated/_spriteSVG.scss */
+/* line 77, src/scss/_generated/_spriteSVG.scss */
 .icon-help-compaigns {
   width: 60px;
   height: 60px;
 }
 
-/* line 77, src/scss/_generated/_spriteSVG.scss */
+/* line 81, src/scss/_generated/_spriteSVG.scss */
 .icon-help-contacts {
   width: 60px;
   height: 60px;
 }
 
-/* line 81, src/scss/_generated/_spriteSVG.scss */
+/* line 85, src/scss/_generated/_spriteSVG.scss */
 .icon-help-faq {
   width: 64px;
   height: 64px;
 }
 
-/* line 85, src/scss/_generated/_spriteSVG.scss */
+/* line 89, src/scss/_generated/_spriteSVG.scss */
 .icon-help-flows {
   width: 60px;
   height: 60px;
 }
 
-/* line 89, src/scss/_generated/_spriteSVG.scss */
+/* line 93, src/scss/_generated/_spriteSVG.scss */
 .icon-help-invoicing {
   width: 54px;
   height: 60px;
 }
 
-/* line 93, src/scss/_generated/_spriteSVG.scss */
+/* line 97, src/scss/_generated/_spriteSVG.scss */
 .icon-help-pipelines {
   width: 60px;
   height: 56px;
 }
 
-/* line 97, src/scss/_generated/_spriteSVG.scss */
+/* line 101, src/scss/_generated/_spriteSVG.scss */
 .icon-help-search {
   width: 59px;
   height: 59px;
 }
 
-/* line 101, src/scss/_generated/_spriteSVG.scss */
+/* line 105, src/scss/_generated/_spriteSVG.scss */
 .icon-leads {
   width: 44px;
   height: 43px;
 }
 
-/* line 105, src/scss/_generated/_spriteSVG.scss */
+/* line 109, src/scss/_generated/_spriteSVG.scss */
 .icon-login {
   width: 20px;
   height: 20px;
 }
 
-/* line 109, src/scss/_generated/_spriteSVG.scss */
+/* line 113, src/scss/_generated/_spriteSVG.scss */
 .icon-logo {
   width: 145px;
   height: 36px;
 }
 
-/* line 113, src/scss/_generated/_spriteSVG.scss */
+/* line 117, src/scss/_generated/_spriteSVG.scss */
 .icon-money {
   width: 26px;
   height: 36px;
 }
 
-/* line 117, src/scss/_generated/_spriteSVG.scss */
+/* line 121, src/scss/_generated/_spriteSVG.scss */
 .icon-pipelines {
   width: 40px;
   height: 42px;
 }
 
-/* line 121, src/scss/_generated/_spriteSVG.scss */
+/* line 125, src/scss/_generated/_spriteSVG.scss */
 .icon-play {
   width: 69px;
   height: 80px;
 }
 
-/* line 125, src/scss/_generated/_spriteSVG.scss */
+/* line 129, src/scss/_generated/_spriteSVG.scss */
 .icon-request {
   width: 48px;
   height: 36px;
 }
 
-/* line 129, src/scss/_generated/_spriteSVG.scss */
+/* line 133, src/scss/_generated/_spriteSVG.scss */
 .icon-robot {
   width: 44px;
   height: 42px;
 }
 
-/* line 133, src/scss/_generated/_spriteSVG.scss */
+/* line 137, src/scss/_generated/_spriteSVG.scss */
 .icon-signup {
   width: 16px;
   height: 20px;
@@ -4654,6 +4660,162 @@ picture {
   .help__block-name {
     font-size: 19px;
   }
+}
+
+/* line 80, src/scss/_components/support/_help.scss */
+.help__topic {
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 80, src/scss/_components/support/_help.scss */
+  .help__topic {
+    padding-bottom: calc(50px + 337 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 80, src/scss/_components/support/_help.scss */
+  .help__topic {
+    padding-bottom: 387px;
+  }
+}
+
+/* line 83, src/scss/_components/support/_help.scss */
+.help__topic-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  color: #00449D;
+}
+
+/* line 89, src/scss/_components/support/_help.scss */
+.help__topic-back svg {
+  width: 16px;
+  height: 16px;
+  fill: #00449D;
+}
+
+/* line 95, src/scss/_components/support/_help.scss */
+.help__topic-back span {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 95, src/scss/_components/support/_help.scss */
+  .help__topic-back span {
+    font-size: calc(16px + 3 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 95, src/scss/_components/support/_help.scss */
+  .help__topic-back span {
+    font-size: 19px;
+  }
+}
+
+/* line 101, src/scss/_components/support/_help.scss */
+.help__topic-title {
+  padding-bottom: 40px;
+  color: #000;
+  line-height: 1.2;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 101, src/scss/_components/support/_help.scss */
+  .help__topic-title {
+    font-size: calc(25px + 15 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 101, src/scss/_components/support/_help.scss */
+  .help__topic-title {
+    font-size: 40px;
+  }
+}
+
+/* line 109, src/scss/_components/support/_help.scss */
+.help__topic-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 113, src/scss/_components/support/_help.scss */
+.help__topic-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 71px;
+  border-bottom: 1px solid #D8D8D8;
+  color: #00449D;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 113, src/scss/_components/support/_help.scss */
+  .help__topic-link a {
+    font-size: calc(16px + 3 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 113, src/scss/_components/support/_help.scss */
+  .help__topic-link a {
+    font-size: 19px;
+  }
+}
+
+/* line 121, src/scss/_components/support/_help.scss */
+.help__topic-link a span {
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 121, src/scss/_components/support/_help.scss */
+  .help__topic-link a span {
+    width: 100%;
+    max-width: calc(100% - 12px);
+  }
+}
+
+/* line 129, src/scss/_components/support/_help.scss */
+.help__topic-link a i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 12px;
+}
+
+/* line 136, src/scss/_components/support/_help.scss */
+.help__topic-link a svg {
+  width: 12px;
+  fill: #00449D;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 /*# sourceMappingURL=maps/app.css.map */
