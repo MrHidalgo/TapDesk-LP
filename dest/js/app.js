@@ -483,6 +483,104 @@ $(document).ready(function (ev) {
   };
 
   /**
+   *
+   */
+  var initSupportLogic = function initSupportLogic() {
+    var supportBlockBtn = $('[support-btn-js]'),
+        supportBackTopicBtn = $('[support-back-topic-js]'),
+        supportBackInsideBtn = $('[support-back-inside-js]'),
+        supportTopicBtn = $('[support-topic-btn-js]'),
+        supportTopicInsideBtn = $('[support-topicInside-btn-js]'),
+        blockNode = $('.help.help--block'),
+        topicNode = $('.help.help--topic'),
+        insideNode = $('.help.help--inside'),
+        blockElemTitle = blockNode.find('h2'),
+        insideElemTitle = insideNode.find('h2'),
+        topicElemTitle = topicNode.find('h2');
+
+    /**
+     * @description support block section - go to topic
+     */
+    supportBlockBtn.on('click', function (ev) {
+      var elem = $(ev.currentTarget),
+          elemName = elem.find('p').text();
+
+      supportBlockBtn.removeClass('is-active');
+      supportBlockBtn.removeClass('zoomIn').addClass('zoomOut');
+
+      elem.addClass('is-active');
+
+      blockElemTitle.removeClass('fadeIn').addClass('fadeOut');
+      topicElemTitle.html(elemName);
+
+      setTimeout(function () {
+        blockNode.fadeOut(300);
+
+        topicNode.fadeIn(300);
+        topicNode.addClass('is-topic');
+        console.log("block btn choose setTimeout :: end");
+      }, 450);
+    });
+
+    /**
+     * @description support back from topic to block section
+     */
+    supportBackTopicBtn.on('click', function (ev) {
+      topicNode.removeClass('is-topic');
+
+      supportBlockBtn.removeClass('is-active zoomOut');
+
+      blockElemTitle.removeClass('fadeOut');
+
+      setTimeout(function () {
+        topicNode.fadeOut(300);
+
+        blockNode.fadeIn(300);
+        supportBlockBtn.addClass('zoomIn');
+        blockElemTitle.addClass('fadeIn');
+        console.log("topic back btn setTimeout :: end");
+      }, 1100);
+    });
+
+    /**
+     * @description support topic section - go to inside
+     */
+    supportTopicBtn.on('click', function (ev) {
+      var elem = $(ev.currentTarget),
+          elemName = elem.find('span').text(),
+          topicTitle = topicNode.find('h2').text();
+
+      elem.addClass('is-inside');
+
+      insideNode.find('.help__back span').html(topicTitle);
+      insideElemTitle.html(elemName);
+
+      setTimeout(function () {
+        elem.removeClass('is-inside');
+
+        topicNode.fadeOut(300);
+
+        insideNode.fadeIn(300).addClass('is-descr');
+        insideNode.find('div').addClass('slideInUp');
+
+        console.log("topic link choose setTimeout :: end");
+      }, 400);
+    });
+
+    supportTopicInsideBtn.on('click', function (ev) {
+      // logic for internal content change
+    });
+
+    supportBackInsideBtn.on('click', function (ev) {
+      insideNode.fadeOut(300).removeClass('is-descr');
+      insideNode.find('div').removeClass('slideInUp');
+
+      topicNode.fadeIn(300);
+      topicNode.addClass('is-topic');
+    });
+  };
+
+  /**
    * @description Init all method
    */
   var initJquery = function initJquery() {
@@ -501,6 +599,7 @@ $(document).ready(function (ev) {
     initVideo();
     initHamburger();
     initSwiper();
+    initSupportLogic();
   };
   initJquery();
 });
