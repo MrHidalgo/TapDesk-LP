@@ -568,7 +568,34 @@ $(document).ready(function (ev) {
     });
 
     supportTopicInsideBtn.on('click', function (ev) {
-      // logic for internal content change
+      var elem = $(ev.currentTarget),
+          elemVal = elem.find('span').text(),
+          elemHref = $(ev.currentTarget).attr('href'),
+          headerHeight = $(".header").outerHeight() || 0,
+          topHeightOffset = $(elemHref).offset().top - headerHeight;
+
+      if (location.pathname.replace(/^\//, '') === ev.currentTarget.pathname.replace(/^\//, '') && location.hostname === ev.currentTarget.hostname) {
+        var target = $(ev.currentTarget.hash);
+
+        target = target.length ? target : $('[name=' + ev.currentTarget.hash.slice(1) + ']');
+
+        if (target.length) {
+          $('body, html').animate({
+            scrollTop: topHeightOffset
+          }, 1000);
+
+          insideElemTitle.html(elemVal);
+
+          // !!!!!IMPORTANT
+          // del after add real data
+          // =====
+          var testVal = insideNode.find('.help__inside > .help__inside-cover > *').clone();
+          insideNode.find('.help__inside > .help__inside-cover > *').remove();
+          // !!!!!IMPORTANT
+
+          return false;
+        }
+      }
     });
 
     supportBackInsideBtn.on('click', function (ev) {
