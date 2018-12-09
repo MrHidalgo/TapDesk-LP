@@ -230,6 +230,12 @@ var initSwiper = function initSwiper() {
           var slider = this.$el;
 
           paginationPosition(slider);
+        },
+        slideChange: function slideChange() {
+          var slider = this.$el,
+              duplicateSlide = slider.find('.swiper-slide-duplicate .slider__content-left, .swiper-slide-duplicate .slider__content-right');
+
+          duplicateSlide.removeClass('viewport-hide-js');
         }
       }
     };
@@ -590,7 +596,7 @@ $(document).ready(function (ev) {
           // del after add real data
           // =====
           var testVal = insideNode.find('.help__inside > .help__inside-cover > *').clone();
-          insideNode.find('.help__inside > .help__inside-cover > *').remove();
+          insideNode.find('.help__inside-cover').append(testVal);
           // !!!!!IMPORTANT
 
           return false;
