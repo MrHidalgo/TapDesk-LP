@@ -1,15 +1,15 @@
 # FOLDER
 # ==========
-.idea/*
+.idea
 .gulp/*
-.cache/*
-.sass-cache/*
-.tmp/*
-_tmp/*
-node_modules/*
-vendor/*
-src/*
-gulp/*
+.cache
+.sass-cache
+.tmp
+_tmp
+node_modules
+vendor
+src
+gulp
 
 # FILES
 # ==========

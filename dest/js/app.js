@@ -497,6 +497,7 @@ $(document).ready(function (ev) {
         supportBackInsideBtn = $('[support-back-inside-js]'),
         supportTopicBtn = $('[support-topic-btn-js]'),
         supportTopicInsideBtn = $('[support-topicInside-btn-js]'),
+        supportBackToTop = $('[back-to-top-js]'),
         blockNode = $('.help.help--block'),
         topicNode = $('.help.help--topic'),
         insideNode = $('.help.help--inside'),
@@ -592,24 +593,56 @@ $(document).ready(function (ev) {
 
           insideElemTitle.html(elemVal);
 
-          // !!!!!IMPORTANT
+          // !!! IMPORTANT !!!
+          // ============================
+          // ============================
           // del after add real data
-          // =====
+          // ============================
           var testVal = insideNode.find('.help__inside > .help__inside-cover > *').clone();
           insideNode.find('.help__inside-cover').append(testVal);
-          // !!!!!IMPORTANT
+          // ============================
+          // ============================
+          // !!! IMPORTANT !!!!
 
           return false;
         }
       }
+      console.log("supportTopicInsideBtn");
     });
 
+    /**
+     * @description
+     */
     supportBackInsideBtn.on('click', function (ev) {
       insideNode.fadeOut(300).removeClass('is-descr');
       insideNode.find('div').removeClass('slideInUp');
 
       topicNode.fadeIn(300);
       topicNode.addClass('is-topic');
+    });
+
+    /**
+     * @description
+     */
+    supportBackToTop.on('click', function (ev) {
+      var elemHref = $(ev.currentTarget).attr('href'),
+          headerHeight = $(".header").outerHeight() || 0,
+          topHeightOffset = $(elemHref).offset().top - headerHeight;
+
+      if (location.pathname.replace(/^\//, '') === ev.currentTarget.pathname.replace(/^\//, '') && location.hostname === ev.currentTarget.hostname) {
+        var target = $(ev.currentTarget.hash);
+
+        target = target.length ? target : $('[name=' + ev.currentTarget.hash.slice(1) + ']');
+
+        if (target.length) {
+          $('body, html').animate({
+            scrollTop: topHeightOffset
+          }, 1000);
+
+          return false;
+        }
+      }
+      console.log("supportBackToTop");
     });
   };
 

@@ -4484,41 +4484,41 @@ picture {
   color: #00449D;
 }
 
-/* line 3, src/scss/_components/support/_help.scss */
+/* line 7, src/scss/_components/support/_help.scss */
 .help {
   padding-top: 50px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 3, src/scss/_components/support/_help.scss */
+  /* line 7, src/scss/_components/support/_help.scss */
   .help {
     padding-top: calc(50px + 51 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 3, src/scss/_components/support/_help.scss */
+  /* line 7, src/scss/_components/support/_help.scss */
   .help {
     padding-top: 101px;
   }
 }
 
-/* line 7, src/scss/_components/support/_help.scss */
+/* line 11, src/scss/_components/support/_help.scss */
 .help--block h2 {
   text-align: center;
 }
 
-/* line 12, src/scss/_components/support/_help.scss */
+/* line 16, src/scss/_components/support/_help.scss */
 .help--topic {
   display: none;
 }
 
-/* line 16, src/scss/_components/support/_help.scss */
+/* line 20, src/scss/_components/support/_help.scss */
 .help--inside {
   display: none;
 }
 
-/* line 20, src/scss/_components/support/_help.scss */
+/* line 24, src/scss/_components/support/_help.scss */
 .help h2 {
   padding-bottom: 40px;
   color: #000;
@@ -4528,20 +4528,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 20, src/scss/_components/support/_help.scss */
+  /* line 24, src/scss/_components/support/_help.scss */
   .help h2 {
     font-size: calc(25px + 15 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 20, src/scss/_components/support/_help.scss */
+  /* line 24, src/scss/_components/support/_help.scss */
   .help h2 {
     font-size: 40px;
   }
 }
 
-/* line 28, src/scss/_components/support/_help.scss */
+/* line 32, src/scss/_components/support/_help.scss */
 .help h3 {
   padding-bottom: 30px;
   color: #000;
@@ -4551,20 +4551,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 28, src/scss/_components/support/_help.scss */
+  /* line 32, src/scss/_components/support/_help.scss */
   .help h3 {
     font-size: calc(20px + 6 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 28, src/scss/_components/support/_help.scss */
+  /* line 32, src/scss/_components/support/_help.scss */
   .help h3 {
     font-size: 26px;
   }
 }
 
-/* line 36, src/scss/_components/support/_help.scss */
+/* line 40, src/scss/_components/support/_help.scss */
 .help__back {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4576,34 +4576,34 @@ picture {
   color: #00449D;
 }
 
-/* line 42, src/scss/_components/support/_help.scss */
+/* line 46, src/scss/_components/support/_help.scss */
 .help__back svg {
   width: 16px;
   height: 16px;
   fill: #00449D;
 }
 
-/* line 48, src/scss/_components/support/_help.scss */
+/* line 52, src/scss/_components/support/_help.scss */
 .help__back span {
   padding-left: 20px;
   font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 48, src/scss/_components/support/_help.scss */
+  /* line 52, src/scss/_components/support/_help.scss */
   .help__back span {
     font-size: calc(16px + 3 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 48, src/scss/_components/support/_help.scss */
+  /* line 52, src/scss/_components/support/_help.scss */
   .help__back span {
     font-size: 19px;
   }
 }
 
-/* line 54, src/scss/_components/support/_help.scss */
+/* line 58, src/scss/_components/support/_help.scss */
 .help__block {
   width: 100%;
   max-width: calc((100% - 120px) / 4);
@@ -4620,27 +4620,27 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 54, src/scss/_components/support/_help.scss */
+  /* line 58, src/scss/_components/support/_help.scss */
   .help__block {
     max-width: calc((100% - 90px) / 3);
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 54, src/scss/_components/support/_help.scss */
+  /* line 58, src/scss/_components/support/_help.scss */
   .help__block {
     max-width: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 54, src/scss/_components/support/_help.scss */
+  /* line 58, src/scss/_components/support/_help.scss */
   .help__block {
     max-width: calc(100% - 30px);
   }
 }
 
-/* line 74, src/scss/_components/support/_help.scss */
+/* line 78, src/scss/_components/support/_help.scss */
 .help__block.is-active, .help__block:hover {
   background: #CD084B;
   -webkit-transition: background 0.3s ease-in-out;
@@ -4648,7 +4648,7 @@ picture {
   transition: background 0.3s ease-in-out;
 }
 
-/* line 80, src/scss/_components/support/_help.scss */
+/* line 84, src/scss/_components/support/_help.scss */
 .help__block.is-active .help__block-img svg, .help__block:hover .help__block-img svg {
   fill: #fff;
   -webkit-transition: fill 0.3s ease-in-out;
@@ -4656,7 +4656,7 @@ picture {
   transition: fill 0.3s ease-in-out;
 }
 
-/* line 86, src/scss/_components/support/_help.scss */
+/* line 90, src/scss/_components/support/_help.scss */
 .help__block.is-active .help__block-name, .help__block:hover .help__block-name {
   color: #fff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -4664,7 +4664,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 92, src/scss/_components/support/_help.scss */
+/* line 96, src/scss/_components/support/_help.scss */
 .help__block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4678,20 +4678,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 92, src/scss/_components/support/_help.scss */
+  /* line 96, src/scss/_components/support/_help.scss */
   .help__block-wrapper {
     padding-bottom: calc(75px + 99 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 92, src/scss/_components/support/_help.scss */
+  /* line 96, src/scss/_components/support/_help.scss */
   .help__block-wrapper {
     padding-bottom: 174px;
   }
 }
 
-/* line 99, src/scss/_components/support/_help.scss */
+/* line 103, src/scss/_components/support/_help.scss */
 .help__block-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4705,7 +4705,7 @@ picture {
   min-height: 60px;
 }
 
-/* line 105, src/scss/_components/support/_help.scss */
+/* line 109, src/scss/_components/support/_help.scss */
 .help__block-img svg {
   fill: #00449D;
   -webkit-transition: fill 0.3s ease-in-out;
@@ -4713,7 +4713,7 @@ picture {
   transition: fill 0.3s ease-in-out;
 }
 
-/* line 111, src/scss/_components/support/_help.scss */
+/* line 115, src/scss/_components/support/_help.scss */
 .help__block-name {
   padding-top: 22px;
   color: #000;
@@ -4725,39 +4725,39 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 111, src/scss/_components/support/_help.scss */
+  /* line 115, src/scss/_components/support/_help.scss */
   .help__block-name {
     font-size: calc(16px + 3 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 111, src/scss/_components/support/_help.scss */
+  /* line 115, src/scss/_components/support/_help.scss */
   .help__block-name {
     font-size: 19px;
   }
 }
 
-/* line 120, src/scss/_components/support/_help.scss */
+/* line 124, src/scss/_components/support/_help.scss */
 .help__topic {
   padding-bottom: 100px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 120, src/scss/_components/support/_help.scss */
+  /* line 124, src/scss/_components/support/_help.scss */
   .help__topic {
     padding-bottom: calc(100px + 287 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 120, src/scss/_components/support/_help.scss */
+  /* line 124, src/scss/_components/support/_help.scss */
   .help__topic {
     padding-bottom: 387px;
   }
 }
 
-/* line 123, src/scss/_components/support/_help.scss */
+/* line 127, src/scss/_components/support/_help.scss */
 .help__topic .help__back,
 .help__topic h2,
 .help__topic .help__topic-link a {
@@ -4771,7 +4771,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 129, src/scss/_components/support/_help.scss */
+/* line 133, src/scss/_components/support/_help.scss */
 .is-topic .help__topic .help__back, .is-topic
 .help__topic h2, .is-topic
 .help__topic .help__topic-link a {
@@ -4785,7 +4785,7 @@ picture {
   transition: transform 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
 }
 
-/* line 136, src/scss/_components/support/_help.scss */
+/* line 140, src/scss/_components/support/_help.scss */
 .help__topic .help__topic-link > a.is-inside {
   -webkit-transition-delay: 0s !important;
        -o-transition-delay: 0s !important;
@@ -4800,7 +4800,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 143, src/scss/_components/support/_help.scss */
+/* line 147, src/scss/_components/support/_help.scss */
 .help__topic-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4811,7 +4811,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 147, src/scss/_components/support/_help.scss */
+/* line 151, src/scss/_components/support/_help.scss */
 .help__topic-link a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4835,20 +4835,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 147, src/scss/_components/support/_help.scss */
+  /* line 151, src/scss/_components/support/_help.scss */
   .help__topic-link a {
     font-size: calc(16px + 3 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 147, src/scss/_components/support/_help.scss */
+  /* line 151, src/scss/_components/support/_help.scss */
   .help__topic-link a {
     font-size: 19px;
   }
 }
 
-/* line 158, src/scss/_components/support/_help.scss */
+/* line 162, src/scss/_components/support/_help.scss */
 .help__topic-link a:hover {
   border-color: #00449D;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -4856,7 +4856,7 @@ picture {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 162, src/scss/_components/support/_help.scss */
+/* line 166, src/scss/_components/support/_help.scss */
 .help__topic-link a:hover i {
   -webkit-transform: translateX(10px);
       -ms-transform: translateX(10px);
@@ -4869,7 +4869,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 162, src/scss/_components/support/_help.scss */
+  /* line 166, src/scss/_components/support/_help.scss */
   .help__topic-link a:hover i {
     -webkit-transform: translateX(5px);
         -ms-transform: translateX(5px);
@@ -4877,20 +4877,20 @@ picture {
   }
 }
 
-/* line 171, src/scss/_components/support/_help.scss */
+/* line 175, src/scss/_components/support/_help.scss */
 .help__topic-link a span {
   padding-right: 20px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 171, src/scss/_components/support/_help.scss */
+  /* line 175, src/scss/_components/support/_help.scss */
   .help__topic-link a span {
     width: 100%;
     max-width: calc(100% - 12px);
   }
 }
 
-/* line 179, src/scss/_components/support/_help.scss */
+/* line 183, src/scss/_components/support/_help.scss */
 .help__topic-link a i {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4909,7 +4909,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 187, src/scss/_components/support/_help.scss */
+/* line 191, src/scss/_components/support/_help.scss */
 .help__topic-link a svg {
   width: 12px;
   fill: #00449D;
@@ -4918,40 +4918,40 @@ picture {
           transform: rotate(-90deg);
 }
 
-/* line 196, src/scss/_components/support/_help.scss */
+/* line 200, src/scss/_components/support/_help.scss */
 .help__inside {
   padding-bottom: 75px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 196, src/scss/_components/support/_help.scss */
+  /* line 200, src/scss/_components/support/_help.scss */
   .help__inside {
     padding-bottom: calc(75px + 99 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 196, src/scss/_components/support/_help.scss */
+  /* line 200, src/scss/_components/support/_help.scss */
   .help__inside {
     padding-bottom: 174px;
   }
 }
 
-/* line 199, src/scss/_components/support/_help.scss */
+/* line 203, src/scss/_components/support/_help.scss */
 .help__inside .help__back {
   -webkit-transition-delay: 0.1s !important;
        -o-transition-delay: 0.1s !important;
           transition-delay: 0.1s !important;
 }
 
-/* line 203, src/scss/_components/support/_help.scss */
+/* line 207, src/scss/_components/support/_help.scss */
 .help__inside h2 {
   -webkit-transition-delay: 0.2s !important;
        -o-transition-delay: 0.2s !important;
           transition-delay: 0.2s !important;
 }
 
-/* line 207, src/scss/_components/support/_help.scss */
+/* line 211, src/scss/_components/support/_help.scss */
 .help__inside .help__back,
 .help__inside h2 {
   -webkit-transform: translateX(150%);
@@ -4964,7 +4964,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 212, src/scss/_components/support/_help.scss */
+/* line 216, src/scss/_components/support/_help.scss */
 .is-descr .help__inside .help__back, .is-descr
 .help__inside h2 {
   -webkit-transform: translateX(0);
@@ -4977,7 +4977,7 @@ picture {
   transition: transform 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
 }
 
-/* line 218, src/scss/_components/support/_help.scss */
+/* line 222, src/scss/_components/support/_help.scss */
 .help__inside p,
 .help__inside h5,
 .help__inside ul li {
@@ -4987,7 +4987,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 218, src/scss/_components/support/_help.scss */
+  /* line 222, src/scss/_components/support/_help.scss */
   .help__inside p,
   .help__inside h5,
   .help__inside ul li {
@@ -4996,7 +4996,7 @@ picture {
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 218, src/scss/_components/support/_help.scss */
+  /* line 222, src/scss/_components/support/_help.scss */
   .help__inside p,
   .help__inside h5,
   .help__inside ul li {
@@ -5004,7 +5004,7 @@ picture {
   }
 }
 
-/* line 225, src/scss/_components/support/_help.scss */
+/* line 229, src/scss/_components/support/_help.scss */
 .is-descr .help__inside p, .is-descr
 .help__inside h5, .is-descr
 .help__inside ul li {
@@ -5014,17 +5014,17 @@ picture {
           animation-name: slideInUp;
 }
 
-/* line 231, src/scss/_components/support/_help.scss */
+/* line 235, src/scss/_components/support/_help.scss */
 .help__inside p {
   padding-bottom: 30px;
 }
 
-/* line 234, src/scss/_components/support/_help.scss */
+/* line 238, src/scss/_components/support/_help.scss */
 .help__inside p:last-of-type {
   padding-bottom: 60px;
 }
 
-/* line 239, src/scss/_components/support/_help.scss */
+/* line 243, src/scss/_components/support/_help.scss */
 .help__inside h5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5039,19 +5039,19 @@ picture {
   background-color: #F2F5FA;
 }
 
-/* line 249, src/scss/_components/support/_help.scss */
+/* line 253, src/scss/_components/support/_help.scss */
 .help__inside ul {
   padding-left: 20px;
   padding-bottom: 15px;
 }
 
-/* line 253, src/scss/_components/support/_help.scss */
+/* line 257, src/scss/_components/support/_help.scss */
 .help__inside ul li {
   padding-bottom: 15px;
   list-style-type: lower-alpha;
 }
 
-/* line 259, src/scss/_components/support/_help.scss */
+/* line 263, src/scss/_components/support/_help.scss */
 .help__inside img {
   display: block;
   max-width: 100%;
