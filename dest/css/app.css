@@ -2552,17 +2552,7 @@ picture {
   background-size: contain;
 }
 
-/* line 126, src/scss/_components/homepage/_main.scss */
-.main__video-wrapper video[poster] {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
-/* line 134, src/scss/_components/homepage/_main.scss */
+/* line 127, src/scss/_components/homepage/_main.scss */
 .main__video-btn {
   z-index: 2;
   position: absolute;
@@ -2586,7 +2576,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 149, src/scss/_components/homepage/_main.scss */
+/* line 142, src/scss/_components/homepage/_main.scss */
 .main__video-btn:hover svg {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
@@ -2598,7 +2588,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 155, src/scss/_components/homepage/_main.scss */
+/* line 148, src/scss/_components/homepage/_main.scss */
 .main__video-btn svg {
   margin-left: 5px;
   fill: #003F91;
@@ -2612,7 +2602,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 163, src/scss/_components/homepage/_main.scss */
+/* line 156, src/scss/_components/homepage/_main.scss */
 .main__video-progress {
   z-index: 2;
   cursor: pointer;
@@ -2638,14 +2628,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 163, src/scss/_components/homepage/_main.scss */
+  /* line 156, src/scss/_components/homepage/_main.scss */
   .main__video-progress {
     width: calc(100% - 30px);
     bottom: 30px;
   }
 }
 
-/* line 184, src/scss/_components/homepage/_main.scss */
+/* line 177, src/scss/_components/homepage/_main.scss */
 .main__video-progress span {
   position: absolute;
   top: 0;

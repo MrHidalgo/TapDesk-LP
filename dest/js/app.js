@@ -488,9 +488,6 @@ $(document).ready(function (ev) {
     }
   };
 
-  /**
-   *
-   */
   var initSupportLogic = function initSupportLogic() {
     var supportBlockBtn = $('[support-btn-js]'),
         supportBackTopicBtn = $('[support-back-topic-js]'),
@@ -556,6 +553,8 @@ $(document).ready(function (ev) {
       var elem = $(ev.currentTarget),
           elemName = elem.find('span').text(),
           topicTitle = topicNode.find('h2').text();
+
+      console.log("supportTopicBtn");
 
       elem.addClass('is-inside');
 
@@ -645,6 +644,10 @@ $(document).ready(function (ev) {
       console.log("supportBackToTop");
     });
   };
+
+  /*  const initSupportLogic = () => {
+  
+    };*/
 
   /**
    * @description Init all method
