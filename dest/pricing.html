@@ -106,7 +106,7 @@
                           </div>
                         </div>
                         <div class="types__block-bottom">
-                          <p class="types__block-limit">User limit:<span>1</span></p><a class="types__block-btn" href="#" title="">choose</a>
+                          <p class="types__block-limit">User limit:<span>1</span></p><a class="types__block-btn" data-types="individual" type-btn-js href="#" title="">select</a>
                         </div>
                       </div>
               </div>
@@ -126,7 +126,7 @@
                           </div>
                         </div>
                         <div class="types__block-bottom">
-                          <p class="types__block-limit">User limit:<span>10</span></p><a class="types__block-btn" href="#" title="">choose</a>
+                          <p class="types__block-limit">User limit:<span>10</span></p><a class="types__block-btn" data-types="team" type-btn-js href="#" title="">select</a>
                         </div>
                       </div>
               </div>
@@ -146,9 +146,19 @@
                           </div>
                         </div>
                         <div class="types__block-bottom">
-                          <p class="types__block-limit">User limit:<span>None</span></p><a class="types__block-btn" href="#" title="">choose</a>
+                          <p class="types__block-limit">User limit:<span>None</span></p><a class="types__block-btn" data-types="enterprise" type-btn-js href="#" title="">select</a>
                         </div>
                       </div>
+              </div>
+            </div>
+            <div class="types__checkbox">
+              <div class="c-form__field c-form__field--checkbox viewport-hide-js" data-animation-name="slideInUp">
+                <div class="c-form__checkbox-wrapper">
+                  <input class="c-form__checkbox" type="checkbox" id="types_checkbox" name="types_checkbox" checkbox-js>
+                  <label class="c-form__checkbox-content" for="types_checkbox">
+                    <div class="c-form__checkbox-icon"><i></i></div><span class="c-form__checkbox-text">View plans without search feature</span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -158,10 +168,10 @@
       <!-- SECTION plans :: START-->
       <section class="plans" id="plans">
         <div class="c-grid">
-          <div class="plans__wrapper">
-            <h1 class="plans__title viewport-hide-js" data-animation-name="slideInUp">Enterprise plans</h1>
+          <div class="plans__wrapper plans__wrapper-0" data-plans="individual">
+            <h1 class="plans__title">Individual plans</h1>
             <div class="plans__block-wrapper">
-              <div class="viewport-hide-js" data-animation-name="slideInUp">
+              <div>
                       <div class="plans__block plans__block-0">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Basic Plan
@@ -215,7 +225,7 @@
                         </div>
                       </div>
               </div>
-              <div class="viewport-hide-js" data-animation-name="slideInUp">
+              <div>
                       <div class="plans__block plans__block-1">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Bronze Plan
@@ -289,7 +299,7 @@
                         </div>
                       </div>
               </div>
-              <div class="viewport-hide-js" data-animation-name="slideInUp">
+              <div>
                       <div class="plans__block plans__block-2">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Silver Plan<span>popular</span>
@@ -363,7 +373,7 @@
                         </div>
                       </div>
               </div>
-              <div class="viewport-hide-js" data-animation-name="slideInUp">
+              <div>
                       <div class="plans__block plans__block-3">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Silver Select Plan
@@ -437,7 +447,7 @@
                         </div>
                       </div>
               </div>
-              <div class="viewport-hide-js" data-animation-name="slideInUp">
+              <div>
                       <div class="plans__block plans__block-4">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Automation Plan
@@ -521,7 +531,595 @@
                         </div>
                       </div>
               </div>
-              <div class="viewport-hide-js" data-animation-name="slideInUp">
+              <div>
+                      <div class="plans__block plans__block-5">
+                        <div class="plans__block-left">
+                          <h2 class="plans__block-title">Tapdesk Enterprise Automation Select Plan
+                          </h2>
+                          <ul>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Unlimited business basic search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>200 business searches with contacts per month</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>300 monthly individual searches</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>30 results per individual search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes Tapdesk AI automation feature</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes Flows feature (required for automation)</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes pipelines and contacts feature.</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Add any Tapdesk feature for $5.99/month/feature</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="plans__block-right">
+                          <p class="plans__block-price">$169.99</p>
+                          <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+          <div class="plans__wrapper plans__wrapper-1" data-plans="team">
+            <h1 class="plans__title">Team plans</h1>
+            <div class="plans__block-wrapper">
+              <div>
+                      <div class="plans__block plans__block-3">
+                        <div class="plans__block-left">
+                          <h2 class="plans__block-title">Tapdesk Enterprise Silver Select Plan
+                          </h2>
+                          <ul>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Unlimited business basic search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>200 business searches with contacts per month</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>300 monthly individual searches</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>30 results per individual search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes pipelines and contacts feature.</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Add any Tapdesk feature for $6.99/month/feature</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="plans__block-right">
+                          <p class="plans__block-price">$119.99</p>
+                          <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
+                        </div>
+                      </div>
+              </div>
+              <div>
+                      <div class="plans__block plans__block-4">
+                        <div class="plans__block-left">
+                          <h2 class="plans__block-title">Tapdesk Enterprise Automation Plan
+                          </h2>
+                          <ul>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Unlimited business basic search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>200 business searches with contacts per month</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>300 monthly individual searches</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>30 results per individual search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes Tapdesk AI automation feature</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes Flows feature (required for automation)</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes pipelines and contacts feature.</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="plans__block-right">
+                          <p class="plans__block-price">$139.99</p>
+                          <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
+                        </div>
+                      </div>
+              </div>
+              <div>
+                      <div class="plans__block plans__block-5">
+                        <div class="plans__block-left">
+                          <h2 class="plans__block-title">Tapdesk Enterprise Automation Select Plan
+                          </h2>
+                          <ul>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Unlimited business basic search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>200 business searches with contacts per month</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>300 monthly individual searches</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>30 results per individual search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes Tapdesk AI automation feature</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes Flows feature (required for automation)</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes pipelines and contacts feature.</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Add any Tapdesk feature for $5.99/month/feature</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="plans__block-right">
+                          <p class="plans__block-price">$169.99</p>
+                          <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+          <div class="plans__wrapper plans__wrapper-2" data-plans="enterprise">
+            <h1 class="plans__title">Enterprise plans</h1>
+            <div class="plans__block-wrapper">
+              <div>
+                      <div class="plans__block plans__block-2">
+                        <div class="plans__block-left">
+                          <h2 class="plans__block-title">Tapdesk Enterprise Silver Plan<span>popular</span>
+                          </h2>
+                          <ul>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Unlimited business basic search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>200 business searches with contacts per month</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>300 monthly individual searches</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>30 results per individual search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes pipelines and contacts feature.</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Select two of five features to include.</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="plans__block-right">
+                          <p class="plans__block-price">$99.99</p>
+                          <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
+                        </div>
+                      </div>
+              </div>
+              <div>
+                      <div class="plans__block plans__block-3">
+                        <div class="plans__block-left">
+                          <h2 class="plans__block-title">Tapdesk Enterprise Silver Select Plan
+                          </h2>
+                          <ul>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Unlimited business basic search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>200 business searches with contacts per month</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>300 monthly individual searches</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>30 results per individual search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes pipelines and contacts feature.</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Add any Tapdesk feature for $6.99/month/feature</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="plans__block-right">
+                          <p class="plans__block-price">$119.99</p>
+                          <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
+                        </div>
+                      </div>
+              </div>
+              <div>
+                      <div class="plans__block plans__block-4">
+                        <div class="plans__block-left">
+                          <h2 class="plans__block-title">Tapdesk Enterprise Automation Plan
+                          </h2>
+                          <ul>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Unlimited business basic search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>200 business searches with contacts per month</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>300 monthly individual searches</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>30 results per individual search</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes Tapdesk AI automation feature</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes Flows feature (required for automation)</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div>
+                                <svg class="icon-svg icon-done ">
+                                  <use xlink:href="./img/sprite.svg#done"></use>
+                                </svg>
+                              </div>
+                              <div>
+                                <p>Includes pipelines and contacts feature.</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="plans__block-right">
+                          <p class="plans__block-price">$139.99</p>
+                          <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
+                        </div>
+                      </div>
+              </div>
+              <div>
                       <div class="plans__block plans__block-5">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Automation Select Plan

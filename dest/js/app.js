@@ -645,9 +645,26 @@ $(document).ready(function (ev) {
     });
   };
 
-  /*  const initSupportLogic = () => {
-  
-    };*/
+  var pricingTypes = function pricingTypes() {
+    var countNum = 0;
+
+    $('[type-btn-js]').on('click', function (ev) {
+      var btn = $(ev.currentTarget),
+          btnDataAttr = btn.data('types'),
+          plansNode = $('.plans__wrapper[data-plans="' + btnDataAttr + '"]');
+
+      $('[type-btn-js]').removeClass('is-active');
+      btn.addClass('is-active');
+
+      if (countNum === 0) {
+        plansNode.slideDown(500);
+        countNum++;
+      } else {
+        $('.plans__wrapper').hide();
+        plansNode.fadeIn(450);
+      }
+    });
+  };
 
   /**
    * @description Init all method
@@ -669,6 +686,7 @@ $(document).ready(function (ev) {
     initHamburger();
     initSwiper();
     initSupportLogic();
+    pricingTypes();
   };
   initJquery();
 });
