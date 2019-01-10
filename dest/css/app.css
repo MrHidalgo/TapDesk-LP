@@ -372,6 +372,24 @@
   height: 20px;
 }
 
+/* line 141, src/scss/_generated/_spriteSVG.scss */
+.icon-types-icon-0 {
+  width: 60px;
+  height: 60px;
+}
+
+/* line 145, src/scss/_generated/_spriteSVG.scss */
+.icon-types-icon-1 {
+  width: 60px;
+  height: 60px;
+}
+
+/* line 149, src/scss/_generated/_spriteSVG.scss */
+.icon-types-icon-2 {
+  width: 51px;
+  height: 62px;
+}
+
 /* line 8, src/scss/_shared/_grid.scss */
 .c-grid, .c-grid-fluid {
   width: 100%;
@@ -2494,12 +2512,16 @@ picture {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 31px);
+  height: 100%;
   border-radius: 20px;
   background-color: #F7F7F7;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
-/* line 95, src/scss/_components/homepage/_main.scss */
+/* line 97, src/scss/_components/homepage/_main.scss */
 .main__video-wrapper {
   cursor: pointer;
   overflow: hidden;
@@ -2508,24 +2530,24 @@ picture {
   max-width: 840px;
   margin-left: auto;
   margin-right: auto;
-  height: 404px;
+  min-height: 404px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 95, src/scss/_components/homepage/_main.scss */
+  /* line 97, src/scss/_components/homepage/_main.scss */
   .main__video-wrapper {
-    height: calc(404px + 68 * (100vw - 320px) / 1120);
+    min-height: calc(404px + 68 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 95, src/scss/_components/homepage/_main.scss */
+  /* line 97, src/scss/_components/homepage/_main.scss */
   .main__video-wrapper {
-    height: 472px;
+    min-height: 472px;
   }
 }
 
-/* line 106, src/scss/_components/homepage/_main.scss */
+/* line 108, src/scss/_components/homepage/_main.scss */
 .main__video-wrapper:hover .main__video-progress {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
@@ -2537,7 +2559,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 112, src/scss/_components/homepage/_main.scss */
+/* line 114, src/scss/_components/homepage/_main.scss */
 .main__video-wrapper:before {
   z-index: 0;
   content: '';
@@ -2552,7 +2574,7 @@ picture {
   background-size: contain;
 }
 
-/* line 127, src/scss/_components/homepage/_main.scss */
+/* line 129, src/scss/_components/homepage/_main.scss */
 .main__video-btn {
   z-index: 2;
   position: absolute;
@@ -2576,7 +2598,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 142, src/scss/_components/homepage/_main.scss */
+/* line 144, src/scss/_components/homepage/_main.scss */
 .main__video-btn:hover svg {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
@@ -2588,7 +2610,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 148, src/scss/_components/homepage/_main.scss */
+/* line 150, src/scss/_components/homepage/_main.scss */
 .main__video-btn svg {
   margin-left: 5px;
   fill: #003F91;
@@ -2602,7 +2624,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 156, src/scss/_components/homepage/_main.scss */
+/* line 158, src/scss/_components/homepage/_main.scss */
 .main__video-progress {
   z-index: 2;
   cursor: pointer;
@@ -2628,14 +2650,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 156, src/scss/_components/homepage/_main.scss */
+  /* line 158, src/scss/_components/homepage/_main.scss */
   .main__video-progress {
     width: calc(100% - 30px);
     bottom: 30px;
   }
 }
 
-/* line 177, src/scss/_components/homepage/_main.scss */
+/* line 179, src/scss/_components/homepage/_main.scss */
 .main__video-progress span {
   position: absolute;
   top: 0;
@@ -5047,6 +5069,374 @@ picture {
   max-width: 100%;
   height: auto;
   margin-bottom: 30px;
+}
+
+/* line 3, src/scss/_components/pricing/_plan.scss */
+.plan {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 7, src/scss/_components/pricing/_plan.scss */
+.plan__bg {
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw + 300px);
+  margin-left: -150px;
+  height: calc(100% - 0px);
+  border-top-left-radius: 50% 0;
+  border-top-right-radius: 50% 0;
+  border-bottom-right-radius: 50% 100px;
+  border-bottom-left-radius: 50% 100px;
+}
+
+/* line 21, src/scss/_components/pricing/_plan.scss */
+.plan__bg-inner {
+  width: 100%;
+  height: 100%;
+  background: #F8FAFC;
+  background: -webkit-gradient(linear, left top, right top, from(#F8FAFC), to(#F8FAFC));
+  background: -webkit-linear-gradient(left, #F8FAFC, #F8FAFC);
+  background: -o-linear-gradient(left, #F8FAFC, #F8FAFC);
+  background: linear-gradient(to right, #F8FAFC, #F8FAFC);
+}
+
+/* line 28, src/scss/_components/pricing/_plan.scss */
+.plan__wrapper {
+  z-index: 1;
+  position: relative;
+  min-height: 519px;
+  padding-top: 177px;
+}
+
+/* line 35, src/scss/_components/pricing/_plan.scss */
+.plan__title {
+  padding-bottom: 40px;
+  color: #000;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 35, src/scss/_components/pricing/_plan.scss */
+  .plan__title {
+    font-size: calc(30px + 20 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 35, src/scss/_components/pricing/_plan.scss */
+  .plan__title {
+    font-size: 50px;
+  }
+}
+
+/* line 44, src/scss/_components/pricing/_plan.scss */
+.plan__subtitle {
+  padding-bottom: 10px;
+  color: rgba(0, 68, 157, 0.4);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2.25px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 44, src/scss/_components/pricing/_plan.scss */
+  .plan__subtitle {
+    font-size: calc(14px + 4 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 44, src/scss/_components/pricing/_plan.scss */
+  .plan__subtitle {
+    font-size: 18px;
+  }
+}
+
+/* line 3, src/scss/_components/pricing/_types.scss */
+.types {
+  padding-top: 55px;
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/pricing/_types.scss */
+  .types {
+    padding-top: calc(55px + 46 * (100vw - 320px) / 1119);
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  /* line 3, src/scss/_components/pricing/_types.scss */
+  .types {
+    padding-top: 101px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/pricing/_types.scss */
+  .types {
+    padding-bottom: calc(25px + 25 * (100vw - 320px) / 1119);
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  /* line 3, src/scss/_components/pricing/_types.scss */
+  .types {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 7, src/scss/_components/pricing/_types.scss */
+.types__title {
+  text-align: center;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Muli", sans-serif;
+  font-size: 25px;
+  padding-bottom: 35px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 7, src/scss/_components/pricing/_types.scss */
+  .types__title {
+    font-size: calc(25px + 15 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 7, src/scss/_components/pricing/_types.scss */
+  .types__title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 7, src/scss/_components/pricing/_types.scss */
+  .types__title {
+    padding-bottom: calc(35px + 35 * (100vw - 320px) / 1119);
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  /* line 7, src/scss/_components/pricing/_types.scss */
+  .types__title {
+    padding-bottom: 70px;
+  }
+}
+
+/* line 16, src/scss/_components/pricing/_types.scss */
+.types__block {
+  width: 100%;
+  max-width: 320px;
+  min-height: 498px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 15px 35px 0 rgba(0, 68, 157, 0.07);
+          box-shadow: 0 15px 35px 0 rgba(0, 68, 157, 0.07);
+}
+
+/* line 26, src/scss/_components/pricing/_types.scss */
+.types__block-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 26, src/scss/_components/pricing/_types.scss */
+  .types__block-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 33, src/scss/_components/pricing/_types.scss */
+.types__block-wrapper > div {
+  width: 100%;
+  max-width: calc(100% / 3);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 33, src/scss/_components/pricing/_types.scss */
+  .types__block-wrapper > div {
+    max-width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/* line 46, src/scss/_components/pricing/_types.scss */
+.types__block-top {
+  min-height: calc(498px - 210px);
+  padding: 40px 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 46, src/scss/_components/pricing/_types.scss */
+  .types__block-top {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 46, src/scss/_components/pricing/_types.scss */
+  .types__block-top {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* line 59, src/scss/_components/pricing/_types.scss */
+.types__block-bottom {
+  height: 210px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 2px solid #F8F8F8;
+}
+
+/* line 66, src/scss/_components/pricing/_types.scss */
+.types__block-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 62px;
+}
+
+/* line 72, src/scss/_components/pricing/_types.scss */
+.types__block-name {
+  padding-top: 28px;
+  padding-bottom: 20px;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 72, src/scss/_components/pricing/_types.scss */
+  .types__block-name {
+    font-size: calc(22px + 4 * (100vw - 320px) / 1110);
+  }
+}
+
+@media screen and (min-width: 1430px) {
+  /* line 72, src/scss/_components/pricing/_types.scss */
+  .types__block-name {
+    font-size: 26px;
+  }
+}
+
+/* line 81, src/scss/_components/pricing/_types.scss */
+.types__block-desc {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 81, src/scss/_components/pricing/_types.scss */
+  .types__block-desc {
+    font-size: calc(15px + 2 * (100vw - 320px) / 1110);
+  }
+}
+
+@media screen and (min-width: 1430px) {
+  /* line 81, src/scss/_components/pricing/_types.scss */
+  .types__block-desc {
+    font-size: 17px;
+  }
+}
+
+/* line 87, src/scss/_components/pricing/_types.scss */
+.types__block-limit {
+  padding-bottom: 40px;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 17px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 87, src/scss/_components/pricing/_types.scss */
+  .types__block-limit {
+    font-size: calc(15px + 2 * (100vw - 320px) / 1110);
+  }
+}
+
+@media screen and (min-width: 1430px) {
+  /* line 87, src/scss/_components/pricing/_types.scss */
+  .types__block-limit {
+    font-size: 17px;
+  }
+}
+
+/* line 94, src/scss/_components/pricing/_types.scss */
+.types__block-limit span {
+  color: #000;
+}
+
+/* line 99, src/scss/_components/pricing/_types.scss */
+.types__block-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 185px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 2px solid #CD084B;
+  background-color: transparent;
+  color: #CD084B;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 118, src/scss/_components/pricing/_types.scss */
+.types__block-btn:hover {
+  background-color: #CD084B;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 3, src/scss/_components/pricing/_plans.scss */
+.plans {
+  padding-top: 50px;
+  padding-bottom: 171px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
