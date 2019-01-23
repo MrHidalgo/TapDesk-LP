@@ -502,6 +502,12 @@ $(document).ready(function (ev) {
         insideElemTitle = insideNode.find('h2'),
         topicElemTitle = topicNode.find('h2');
 
+    $('[support-search-js]').on('keydown', function (ev) {
+      if (ev.which === 13) {
+        supportBlockBtn.click();
+      }
+    });
+
     /**
      * @description support block section - go to topic
      */
