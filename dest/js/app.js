@@ -71,6 +71,27 @@ var initPreventBehavior = function initPreventBehavior() {
 };
 
 /**
+ * @name initSmoothScroll
+ * @description Smooth transition to anchors to the block.
+ */
+var initSmoothScroll = function initSmoothScroll() {
+  var btnName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "[anchor-js]";
+  var animateSpeed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
+
+
+  $(btnName).on("click", function (e) {
+
+    var linkHref = $(e.currentTarget).attr('href'),
+        headerHeight = $(".header").outerHeight() || 0,
+        topHeightOffset = $(linkHref).offset().top - headerHeight;
+
+    $('body, html').animate({
+      scrollTop: topHeightOffset
+    }, animateSpeed);
+  });
+};
+
+/**
  * @name initStellar
  * @description Stellar.js is a jQuery plugin that provides parallax scrolling effects to any scrolling element.
  *
@@ -669,6 +690,26 @@ $(document).ready(function (ev) {
         $('.plans__wrapper').hide();
         plansNode.fadeIn(450);
       }
+
+      $('.types__checkbox').fadeIn(450).addClass('is-show');
+    });
+
+    $('[checkbox-js]').on('change', function (ev) {
+      var _elem = $(ev.currentTarget);
+
+      if (_elem.is(':checked')) {
+        $('.plans__block-0').closest('.plans__block-cover').fadeOut(300);
+        $('.plans__block-2').closest('.plans__block-cover').fadeOut(300);
+
+        $('.plans__block-1').find('.plans__block-price').text("$100");
+        $('.plans__block-3').find('.plans__block-price').text("$100");
+      } else {
+        $('.plans__block-0').closest('.plans__block-cover').fadeIn(400);
+        $('.plans__block-2').closest('.plans__block-cover').fadeIn(400);
+
+        $('.plans__block-1').find('.plans__block-price').text($('.plans__block-1').find('.plans__block-price').data('origin-price'));
+        $('.plans__block-3').find('.plans__block-price').text($('.plans__block-3').find('.plans__block-price').data('origin-price'));
+      }
     });
   };
 
@@ -684,6 +725,7 @@ $(document).ready(function (ev) {
     // lib
     initStellar();
     initViewPortChecker();
+    initSmoothScroll();
 
     // callback
     initSelect();

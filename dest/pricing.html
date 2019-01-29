@@ -106,7 +106,7 @@
                           </div>
                         </div>
                         <div class="types__block-bottom">
-                          <p class="types__block-limit">User limit:<span>1</span></p><a class="types__block-btn" data-types="individual" type-btn-js href="#" title="">select</a>
+                          <p class="types__block-limit">User limit:<span>1</span></p><a class="types__block-btn" data-types="individual" type-btn-js anchor-js href="#plans_checkbox" title="">select</a>
                         </div>
                       </div>
               </div>
@@ -126,7 +126,7 @@
                           </div>
                         </div>
                         <div class="types__block-bottom">
-                          <p class="types__block-limit">User limit:<span>10</span></p><a class="types__block-btn" data-types="team" type-btn-js href="#" title="">select</a>
+                          <p class="types__block-limit">User limit:<span>10</span></p><a class="types__block-btn" data-types="team" type-btn-js anchor-js href="#plans_checkbox" title="">select</a>
                         </div>
                       </div>
               </div>
@@ -146,13 +146,13 @@
                           </div>
                         </div>
                         <div class="types__block-bottom">
-                          <p class="types__block-limit">User limit:<span>None</span></p><a class="types__block-btn" data-types="enterprise" type-btn-js href="#" title="">select</a>
+                          <p class="types__block-limit">User limit:<span>None</span></p><a class="types__block-btn" data-types="enterprise" type-btn-js anchor-js href="#plans_checkbox" title="">select</a>
                         </div>
                       </div>
               </div>
             </div>
-            <div class="types__checkbox">
-              <div class="c-form__field c-form__field--checkbox viewport-hide-js" data-animation-name="slideInUp">
+            <div class="types__checkbox" id="plans_checkbox">
+              <div class="c-form__field c-form__field--checkbox">
                 <div class="c-form__checkbox-wrapper">
                   <input class="c-form__checkbox" type="checkbox" id="types_checkbox" name="types_checkbox" checkbox-js>
                   <label class="c-form__checkbox-content" for="types_checkbox">
@@ -171,7 +171,7 @@
           <div class="plans__wrapper plans__wrapper-0" data-plans="individual">
             <h1 class="plans__title">Individual plans</h1>
             <div class="plans__block-wrapper">
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-0">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Basic Plan
@@ -220,12 +220,12 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$79.99</p>
+                          <p class="plans__block-price" data-origin-price="$79.99">$79.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
               </div>
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-1">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Bronze Plan
@@ -294,12 +294,12 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$89.99</p>
+                          <p class="plans__block-price" data-origin-price="$89.99">$89.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
               </div>
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-2">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Silver Plan<span>popular</span>
@@ -368,12 +368,12 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$99.99</p>
+                          <p class="plans__block-price" data-origin-price="$99.99">$99.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
               </div>
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-3">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Silver Select Plan
@@ -442,12 +442,12 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$119.99</p>
+                          <p class="plans__block-price" data-origin-price="$119.99">$119.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
               </div>
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-4">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Automation Plan
@@ -526,12 +526,12 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$139.99</p>
+                          <p class="plans__block-price" data-origin-price="$139.99">$139.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
               </div>
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-5">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Automation Select Plan
@@ -620,7 +620,7 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$169.99</p>
+                          <p class="plans__block-price" data-origin-price="$169.99">$169.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
@@ -630,7 +630,7 @@
           <div class="plans__wrapper plans__wrapper-1" data-plans="team">
             <h1 class="plans__title">Team plans</h1>
             <div class="plans__block-wrapper">
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-3">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Silver Select Plan
@@ -699,12 +699,12 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$119.99</p>
+                          <p class="plans__block-price" data-origin-price="$119.99">$119.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
               </div>
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-4">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Automation Plan
@@ -783,12 +783,12 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$139.99</p>
+                          <p class="plans__block-price" data-origin-price="$139.99">$139.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
               </div>
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-5">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Automation Select Plan
@@ -877,7 +877,7 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$169.99</p>
+                          <p class="plans__block-price" data-origin-price="$169.99">$169.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
@@ -887,7 +887,7 @@
           <div class="plans__wrapper plans__wrapper-2" data-plans="enterprise">
             <h1 class="plans__title">Enterprise plans</h1>
             <div class="plans__block-wrapper">
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-2">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Silver Plan<span>popular</span>
@@ -956,12 +956,12 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$99.99</p>
+                          <p class="plans__block-price" data-origin-price="$99.99">$99.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
               </div>
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-3">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Silver Select Plan
@@ -1030,12 +1030,12 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$119.99</p>
+                          <p class="plans__block-price" data-origin-price="$119.99">$119.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
               </div>
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-4">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Automation Plan
@@ -1114,12 +1114,12 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$139.99</p>
+                          <p class="plans__block-price" data-origin-price="$139.99">$139.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
               </div>
-              <div>
+              <div class="plans__block-cover">
                       <div class="plans__block plans__block-5">
                         <div class="plans__block-left">
                           <h2 class="plans__block-title">Tapdesk Enterprise Automation Select Plan
@@ -1208,7 +1208,7 @@
                           </ul>
                         </div>
                         <div class="plans__block-right">
-                          <p class="plans__block-price">$169.99</p>
+                          <p class="plans__block-price" data-origin-price="$169.99">$169.99</p>
                           <p class="plans__block-per">per user</p><a class="plans__block-btn" href="#" title="">choose</a>
                         </div>
                       </div>
