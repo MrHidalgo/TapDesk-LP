@@ -673,12 +673,15 @@ $(document).ready(function (ev) {
   };
 
   var pricingTypes = function pricingTypes() {
-    var countNum = 0;
+    var countNum = 0,
+        _blockName = '';
 
     $('[type-btn-js]').on('click', function (ev) {
       var btn = $(ev.currentTarget),
           btnDataAttr = btn.data('types'),
           plansNode = $('.plans__wrapper[data-plans="' + btnDataAttr + '"]');
+
+      _blockName = btnDataAttr;
 
       $('[type-btn-js]').removeClass('is-active');
       btn.addClass('is-active');
@@ -692,23 +695,23 @@ $(document).ready(function (ev) {
       }
 
       $('.types__checkbox').fadeIn(450).addClass('is-show');
+      if ($('[checkbox-js]').is(':checked')) {
+        $('[checkbox-js]').prop('checked', false).change();
+      }
     });
 
     $('[checkbox-js]').on('change', function (ev) {
-      var _elem = $(ev.currentTarget);
+      var _elem = $(ev.currentTarget),
+          _plansNode = $('.plans__wrapper[data-plans="' + _blockName + '"]'),
+          _hiddenElem = _plansNode.find('.plans__block-cover--0'),
+          _priceChangeElem = _plansNode.find('.plans__block-cover--1').find('.plans__block-price');
 
       if (_elem.is(':checked')) {
-        $('.plans__block-0').closest('.plans__block-cover').fadeOut(300);
-        $('.plans__block-2').closest('.plans__block-cover').fadeOut(300);
-
-        $('.plans__block-1').find('.plans__block-price').text("$100");
-        $('.plans__block-3').find('.plans__block-price').text("$100");
+        _hiddenElem.addClass('is-hide');
+        _priceChangeElem.text("$100");
       } else {
-        $('.plans__block-0').closest('.plans__block-cover').fadeIn(400);
-        $('.plans__block-2').closest('.plans__block-cover').fadeIn(400);
-
-        $('.plans__block-1').find('.plans__block-price').text($('.plans__block-1').find('.plans__block-price').data('origin-price'));
-        $('.plans__block-3').find('.plans__block-price').text($('.plans__block-3').find('.plans__block-price').data('origin-price'));
+        _hiddenElem.removeClass('is-hide');
+        _priceChangeElem.text($('.plans__block-1').find('.plans__block-price').data('origin-price'));
       }
     });
   };
