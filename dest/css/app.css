@@ -5708,12 +5708,7 @@ picture {
   color: #000;
 }
 
-/* line 39, src/scss/_components/pricing/_plans.scss */
-.plans__block-cover.is-hide {
-  display: none;
-}
-
-/* line 44, src/scss/_components/pricing/_plans.scss */
+/* line 38, src/scss/_components/pricing/_plans.scss */
 .plans__block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5724,7 +5719,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 48, src/scss/_components/pricing/_plans.scss */
+/* line 42, src/scss/_components/pricing/_plans.scss */
 .plans__block-wrapper > div {
   min-height: 150px;
   padding-bottom: 50px;
@@ -5732,14 +5727,14 @@ picture {
   border-bottom: 1px solid #D8D8D8;
 }
 
-/* line 54, src/scss/_components/pricing/_plans.scss */
+/* line 48, src/scss/_components/pricing/_plans.scss */
 .plans__block-wrapper > div:last-of-type {
   padding-bottom: 0;
   margin-bottom: 0;
   border: none;
 }
 
-/* line 62, src/scss/_components/pricing/_plans.scss */
+/* line 56, src/scss/_components/pricing/_plans.scss */
 .plans__block-left {
   width: 100%;
   max-width: calc(100% - 252px);
@@ -5747,7 +5742,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 62, src/scss/_components/pricing/_plans.scss */
+  /* line 56, src/scss/_components/pricing/_plans.scss */
   .plans__block-left {
     max-width: calc(100% - 185px);
     padding-right: 15px;
@@ -5755,20 +5750,20 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 62, src/scss/_components/pricing/_plans.scss */
+  /* line 56, src/scss/_components/pricing/_plans.scss */
   .plans__block-left {
     max-width: 100%;
   }
 }
 
-/* line 75, src/scss/_components/pricing/_plans.scss */
+/* line 69, src/scss/_components/pricing/_plans.scss */
 .plans__block-right {
   width: 252px;
   padding-right: 67px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 75, src/scss/_components/pricing/_plans.scss */
+  /* line 69, src/scss/_components/pricing/_plans.scss */
   .plans__block-right {
     width: 185px;
     padding-right: 0;
@@ -5776,13 +5771,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 75, src/scss/_components/pricing/_plans.scss */
+  /* line 69, src/scss/_components/pricing/_plans.scss */
   .plans__block-right {
     width: 100%;
   }
 }
 
-/* line 87, src/scss/_components/pricing/_plans.scss */
+/* line 81, src/scss/_components/pricing/_plans.scss */
 .plans__block-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5796,21 +5791,21 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 87, src/scss/_components/pricing/_plans.scss */
+  /* line 81, src/scss/_components/pricing/_plans.scss */
   .plans__block-title {
     font-size: calc(22px + 4 * (100vw - 320px) / 447);
   }
 }
 
 @media screen and (min-width: 767px) {
-  /* line 87, src/scss/_components/pricing/_plans.scss */
+  /* line 81, src/scss/_components/pricing/_plans.scss */
   .plans__block-title {
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 87, src/scss/_components/pricing/_plans.scss */
+  /* line 81, src/scss/_components/pricing/_plans.scss */
   .plans__block-title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -5820,7 +5815,7 @@ picture {
   }
 }
 
-/* line 98, src/scss/_components/pricing/_plans.scss */
+/* line 92, src/scss/_components/pricing/_plans.scss */
 .plans__block-title span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5840,28 +5835,28 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 98, src/scss/_components/pricing/_plans.scss */
+  /* line 92, src/scss/_components/pricing/_plans.scss */
   .plans__block-title span {
     font-size: calc(12px + 2 * (100vw - 320px) / 447);
   }
 }
 
 @media screen and (min-width: 767px) {
-  /* line 98, src/scss/_components/pricing/_plans.scss */
+  /* line 92, src/scss/_components/pricing/_plans.scss */
   .plans__block-title span {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 98, src/scss/_components/pricing/_plans.scss */
+  /* line 92, src/scss/_components/pricing/_plans.scss */
   .plans__block-title span {
     margin-left: 0;
     margin-bottom: 5px;
   }
 }
 
-/* line 117, src/scss/_components/pricing/_plans.scss */
+/* line 111, src/scss/_components/pricing/_plans.scss */
 .plans__block ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5872,7 +5867,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 121, src/scss/_components/pricing/_plans.scss */
+/* line 115, src/scss/_components/pricing/_plans.scss */
 .plans__block ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5883,44 +5878,49 @@ picture {
   padding-bottom: 15px;
 }
 
-/* line 127, src/scss/_components/pricing/_plans.scss */
+/* line 120, src/scss/_components/pricing/_plans.scss */
+.plans__block ul li.is-hide {
+  display: none;
+}
+
+/* line 125, src/scss/_components/pricing/_plans.scss */
 .plans__block ul li > div:nth-of-type(1) {
   width: 30px;
 }
 
-/* line 131, src/scss/_components/pricing/_plans.scss */
+/* line 129, src/scss/_components/pricing/_plans.scss */
 .plans__block ul li > div:nth-of-type(2) {
   width: 100%;
   max-width: calc(100% - 30px);
 }
 
-/* line 137, src/scss/_components/pricing/_plans.scss */
+/* line 135, src/scss/_components/pricing/_plans.scss */
 .plans__block ul li svg {
   height: 16px;
   fill: #00449D;
 }
 
-/* line 142, src/scss/_components/pricing/_plans.scss */
+/* line 140, src/scss/_components/pricing/_plans.scss */
 .plans__block ul li p {
   color: #939393;
   font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 142, src/scss/_components/pricing/_plans.scss */
+  /* line 140, src/scss/_components/pricing/_plans.scss */
   .plans__block ul li p {
     font-size: calc(16px + 3 * (100vw - 320px) / 447);
   }
 }
 
 @media screen and (min-width: 767px) {
-  /* line 142, src/scss/_components/pricing/_plans.scss */
+  /* line 140, src/scss/_components/pricing/_plans.scss */
   .plans__block ul li p {
     font-size: 19px;
   }
 }
 
-/* line 149, src/scss/_components/pricing/_plans.scss */
+/* line 147, src/scss/_components/pricing/_plans.scss */
 .plans__block-price {
   padding-bottom: 10px;
   font-weight: bold;
@@ -5928,54 +5928,54 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 149, src/scss/_components/pricing/_plans.scss */
+  /* line 147, src/scss/_components/pricing/_plans.scss */
   .plans__block-price {
     font-size: calc(35px + 5 * (100vw - 320px) / 447);
   }
 }
 
 @media screen and (min-width: 767px) {
-  /* line 149, src/scss/_components/pricing/_plans.scss */
+  /* line 147, src/scss/_components/pricing/_plans.scss */
   .plans__block-price {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 149, src/scss/_components/pricing/_plans.scss */
+  /* line 147, src/scss/_components/pricing/_plans.scss */
   .plans__block-price {
     text-align: center;
   }
 }
 
-/* line 158, src/scss/_components/pricing/_plans.scss */
+/* line 156, src/scss/_components/pricing/_plans.scss */
 .plans__block-per {
   padding-bottom: 20px;
   font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 158, src/scss/_components/pricing/_plans.scss */
+  /* line 156, src/scss/_components/pricing/_plans.scss */
   .plans__block-per {
     font-size: calc(16px + 3 * (100vw - 320px) / 447);
   }
 }
 
 @media screen and (min-width: 767px) {
-  /* line 158, src/scss/_components/pricing/_plans.scss */
+  /* line 156, src/scss/_components/pricing/_plans.scss */
   .plans__block-per {
     font-size: 19px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 158, src/scss/_components/pricing/_plans.scss */
+  /* line 156, src/scss/_components/pricing/_plans.scss */
   .plans__block-per {
     text-align: center;
   }
 }
 
-/* line 166, src/scss/_components/pricing/_plans.scss */
+/* line 164, src/scss/_components/pricing/_plans.scss */
 .plans__block-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6004,7 +6004,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 185, src/scss/_components/pricing/_plans.scss */
+/* line 183, src/scss/_components/pricing/_plans.scss */
 .plans__block-btn:hover {
   background-color: #CD084B;
   color: #fff;

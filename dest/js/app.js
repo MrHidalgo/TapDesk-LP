@@ -695,6 +695,7 @@ $(document).ready(function (ev) {
       }
 
       $('.types__checkbox').fadeIn(450).addClass('is-show');
+
       if ($('[checkbox-js]').is(':checked')) {
         $('[checkbox-js]').prop('checked', false).change();
       }
@@ -703,15 +704,63 @@ $(document).ready(function (ev) {
     $('[checkbox-js]').on('change', function (ev) {
       var _elem = $(ev.currentTarget),
           _plansNode = $('.plans__wrapper[data-plans="' + _blockName + '"]'),
-          _hiddenElem = _plansNode.find('.plans__block-cover--0'),
-          _priceChangeElem = _plansNode.find('.plans__block-cover--1').find('.plans__block-price');
+          _hiddenElem = _plansNode.find('.plans__block-item--hide'),
+          _priceChangeElem = _plansNode.find('.plans__block-price');
 
       if (_elem.is(':checked')) {
         _hiddenElem.addClass('is-hide');
-        _priceChangeElem.text("$100");
+
+        var _iteratorNormalCompletion2 = true;
+        var _didIteratorError2 = false;
+        var _iteratorError2 = undefined;
+
+        try {
+          for (var _iterator2 = _priceChangeElem[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+            var elNew = _step2.value;
+
+            $(elNew).text($(elNew).data('new-price'));
+          }
+        } catch (err) {
+          _didIteratorError2 = true;
+          _iteratorError2 = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+              _iterator2.return();
+            }
+          } finally {
+            if (_didIteratorError2) {
+              throw _iteratorError2;
+            }
+          }
+        }
       } else {
         _hiddenElem.removeClass('is-hide');
-        _priceChangeElem.text($('.plans__block-1').find('.plans__block-price').data('origin-price'));
+
+        var _iteratorNormalCompletion3 = true;
+        var _didIteratorError3 = false;
+        var _iteratorError3 = undefined;
+
+        try {
+          for (var _iterator3 = _priceChangeElem[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+            var elOrigin = _step3.value;
+
+            $(elOrigin).text($(elOrigin).data('origin-price'));
+          }
+        } catch (err) {
+          _didIteratorError3 = true;
+          _iteratorError3 = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion3 && _iterator3.return) {
+              _iterator3.return();
+            }
+          } finally {
+            if (_didIteratorError3) {
+              throw _iteratorError3;
+            }
+          }
+        }
       }
     });
   };
