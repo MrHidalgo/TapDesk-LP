@@ -765,6 +765,13 @@ $(document).ready(function (ev) {
     });
   };
 
+  var initResourcesMainBtn = function initResourcesMainBtn() {
+    $('.r-main__btn').on('click', function (ev) {
+      $('.r-main__btn').removeClass('is-active');
+      $(ev.currentTarget).addClass('is-active');
+    });
+  };
+
   /**
    * @description Init all method
    */
@@ -787,6 +794,7 @@ $(document).ready(function (ev) {
     initSwiper();
     initSupportLogic();
     pricingTypes();
+    initResourcesMainBtn();
   };
   initJquery();
 });
