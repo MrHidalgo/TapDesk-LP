@@ -1213,7 +1213,7 @@ picture {
 /* line 90, src/scss/_shared/_magnificPopup.scss */
 .mfp-iframe-holder .mfp-close {
   top: -50px;
-  right: -36px;
+  padding-right: 0;
   font-size: 40px;
 }
 
