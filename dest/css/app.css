@@ -6408,12 +6408,13 @@ picture {
 .exchequer__block-top {
   overflow: hidden;
   position: relative;
+  z-index: 1;
   height: 200px;
   margin-bottom: 26px;
   border-radius: 7px;
 }
 
-/* line 56, src/scss/_components/resources/_exchequer.scss */
+/* line 57, src/scss/_components/resources/_exchequer.scss */
 .exchequer__block-top img {
   position: absolute;
   top: 0;
@@ -6434,7 +6435,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 69, src/scss/_components/resources/_exchequer.scss */
+/* line 70, src/scss/_components/resources/_exchequer.scss */
 .exchequer__block-play {
   z-index: 10;
   position: absolute;
@@ -6453,12 +6454,12 @@ picture {
   height: 100%;
 }
 
-/* line 80, src/scss/_components/resources/_exchequer.scss */
+/* line 81, src/scss/_components/resources/_exchequer.scss */
 .exchequer__block-play svg {
   fill: #fff;
 }
 
-/* line 85, src/scss/_components/resources/_exchequer.scss */
+/* line 86, src/scss/_components/resources/_exchequer.scss */
 .exchequer__block-badge {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -6477,7 +6478,7 @@ picture {
   border-radius: 12px;
 }
 
-/* line 96, src/scss/_components/resources/_exchequer.scss */
+/* line 97, src/scss/_components/resources/_exchequer.scss */
 .exchequer__block-badge p {
   text-transform: uppercase;
   font-weight: bold;
@@ -6487,7 +6488,7 @@ picture {
   line-height: 34px;
 }
 
-/* line 106, src/scss/_components/resources/_exchequer.scss */
+/* line 107, src/scss/_components/resources/_exchequer.scss */
 .exchequer__block-title {
   padding-bottom: 10px;
   font-size: 26px;
@@ -6496,7 +6497,7 @@ picture {
   line-height: 20px;
 }
 
-/* line 114, src/scss/_components/resources/_exchequer.scss */
+/* line 115, src/scss/_components/resources/_exchequer.scss */
 .exchequer__block-text {
   font-size: 17px;
   color: rgba(0, 0, 0, 0.4);
@@ -6504,7 +6505,7 @@ picture {
   line-height: 26px;
 }
 
-/* line 121, src/scss/_components/resources/_exchequer.scss */
+/* line 122, src/scss/_components/resources/_exchequer.scss */
 .exchequer__block-wrapper {
   position: relative;
   margin-left: -40px;
@@ -6516,13 +6517,13 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 121, src/scss/_components/resources/_exchequer.scss */
+  /* line 122, src/scss/_components/resources/_exchequer.scss */
   .exchequer__block-wrapper {
     margin-left: -15px;
   }
 }
 
-/* line 130, src/scss/_components/resources/_exchequer.scss */
+/* line 131, src/scss/_components/resources/_exchequer.scss */
 .exchequer__block-wrapper > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6533,27 +6534,27 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 130, src/scss/_components/resources/_exchequer.scss */
+  /* line 131, src/scss/_components/resources/_exchequer.scss */
   .exchequer__block-wrapper > div {
     padding-left: 15px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 130, src/scss/_components/resources/_exchequer.scss */
+  /* line 131, src/scss/_components/resources/_exchequer.scss */
   .exchequer__block-wrapper > div {
     max-width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 130, src/scss/_components/resources/_exchequer.scss */
+  /* line 131, src/scss/_components/resources/_exchequer.scss */
   .exchequer__block-wrapper > div {
     max-width: 100%;
   }
 }
 
-/* line 145, src/scss/_components/resources/_exchequer.scss */
+/* line 146, src/scss/_components/resources/_exchequer.scss */
 .exchequer__block-wrapper > div.is-hide {
   display: none;
 }
