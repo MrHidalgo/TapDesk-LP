@@ -839,7 +839,7 @@ $(document).ready(function (ev) {
     };
 
     var hideDrop = function hideDrop(el) {
-      $(el).closest('.c-form__field').removeClass('is-focus').find('.c-form__dropdown').slideUp(450);
+      $(el).closest('.c-form__field').removeClass('is-focus').find('.c-form__dropdown').hide();
     };
 
     var changeInputText = function changeInputText(el) {
